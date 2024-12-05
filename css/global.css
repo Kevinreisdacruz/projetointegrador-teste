@@ -1,0 +1,971 @@
+/* INDEX  */
+
+@import url('https:fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url('https:fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https:fonts.googleapis.com/css2?family=Ultra&display=swap');
+
+@media only screen and (max-width: 1280px) {
+
+    .escrita {
+        h3 {
+            font-size: 15px;
+        }
+
+    }
+
+    h4{
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+body {
+    background-image: url(../imagefundos/fundogelato.png);
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+
+}
+
+/* NAVBAR */
+
+@media only screen and (max-width: 1280px) {
+
+
+
+    h5 {
+        font-size: 0.9rem;
+    }
+}
+
+
+.navbarcss {
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+
+    #logo {
+        transition: all ease-in-out 0.7s;
+    }
+
+    #logo:hover {
+        scale: 1.1;
+    }
+
+    a {
+        cursor: pointer;
+    }
+
+}
+
+.box-link {
+    margin-left: 0.5rem;
+}
+
+.link-navbar {
+    position: relative;
+    font-size: 24px;
+}
+
+.link-navbar::after {
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-color: #A8D2A0;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.5s ease-in-out;
+}
+
+.link-navbar:hover::after {
+    width: 100%;
+}
+
+
+
+.pesquisar {
+    background-color: #A8D2A0;
+    color: white;
+    transition: all ease-in-out 1.1s;
+}
+
+.pesquisar:hover {
+    scale: 1.1;
+}
+
+
+/* aqui comeca o css do popup de login */
+#container-login {
+
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    backdrop-filter: blur(2px);
+
+}
+
+#caixalogin {
+    background-color: white;
+    width: 25.5rem;
+    height: 28rem;
+    margin: auto;
+    margin-top: 10rem;
+    padding: 50px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+    animation: animacao-login 1s;
+
+    input {
+        padding: 10px;
+        border-radius: 10px;
+        outline: none;
+        font-size: 15px;
+        width: 15rem;
+
+
+    }
+
+    button {
+        width: 100%;
+        height: 3rem;
+        border: none;
+        border-radius: 10px;
+        background-color: #A8D2A0;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all .3s;
+    }
+
+    button:active {
+        transform: scale(.8);
+    }
+
+    h6 {
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    h6:hover {
+        text-decoration: underline;
+    }
+}
+
+@keyframes animacao-login {
+    from {
+        scale: 0;
+    }
+
+    to {
+        scale: 1;
+    }
+}
+
+div {
+    position: relative;
+}
+
+div i {
+    font-size: 30px;
+    cursor: pointer;
+
+    position: absolute;
+    right: 15%;
+    margin-top: 4px;
+
+}
+
+/* aqui acaba o css do popup de login */
+
+
+/* aqui comeca o css do popup de cadastro */
+
+.caixa-cadastro {
+    background-color: white;
+    width: 25.5rem;
+    height: 30rem;
+    margin: auto;
+    margin-top: 10rem;
+    padding: 50px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+    animation: animacao-popup 1s;
+
+    input {
+        padding: 10px;
+        border-radius: 10px;
+        outline: none;
+        font-size: 15px;
+        width: 15rem;
+
+
+    }
+
+    button {
+        width: 100%;
+        height: 3rem;
+        border: none;
+        border-radius: 10px;
+        background-color: #A8D2A0;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all .3s;
+    }
+
+    button:active {
+        transform: scale(.8);
+    }
+
+    h6 {
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    h6:hover {
+        text-decoration: underline;
+    }
+}
+
+@keyframes animacao-popup {
+    from {
+        scale: 0;
+    }
+
+    to {
+        scale: 1;
+    }
+}
+
+div {
+    position: relative;
+}
+
+div i {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 15%;
+    margin-top: 4px;
+
+}
+
+
+/* aqui acaba o css do popup de cadastro */
+
+
+/* aqui comeca popup de exclusao de cadastro */
+
+#container-excluir {
+    display: flex;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    backdrop-filter: blur(2px);
+    animation: animacao-popup 1s;
+
+
+    .fundo-excluir {
+        width: 25rem;
+        height: 27rem;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 0 10px black;
+
+        .titulo-excluir {
+            display: flex;
+            background-color: #a8d2a0;
+            color: white;
+            justify-content: center;
+            margin: 1.5rem;
+        }
+
+
+        .inf-exclusao {
+
+            input {
+                text-decoration: none;
+                width: 18rem;
+                padding: 10px;
+                outline: none;
+                border: 1px solid black;
+                border-radius: 5px;
+                outline: none;
+                font-size: 15px;
+                margin: 1rem;
+
+            }
+
+        }
+
+        .botoes-excluir {
+
+            .btn-excluir {
+                margin: 0.5rem;
+                width: 7rem;
+                height: 2rem;
+                text-decoration: none;
+                background-color: red;
+                color: white;
+                border: solid 1px;
+                border-radius: 5px;
+                transition: all ease-in-out 0.7s;
+            }
+
+            .btn-excluir:hover {
+                scale: 1.1;
+            }
+
+            .btn-esquecer-exclusao {
+                width: 15rem;
+                height: 2rem;
+                text-decoration: none;
+                background-color: #A8D2A0;
+                color: white;
+                border: solid 1px;
+                border-radius: 5px;
+                transition: all ease-in-out 0.7s;
+            }
+
+            .btn-esquecer-exclusao:hover {
+                scale: 1.1;
+            }
+
+        }
+
+    }
+
+}
+
+/* aqui termina popup de exclusao de cadastro */
+
+
+/* aqui comeca popup de alteracao de cadastro */
+
+#container-alterar {
+    display: flex;
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 2;
+    backdrop-filter: blur(2px);
+    animation: animacao-popup 1s;
+}
+
+.fundo-alterar {
+    height: 27rem;
+    background-color: white;
+    border-radius: 15px;
+
+    .titulo-alterar {
+        height: 3rem;
+        background-color: #A8D2A0;
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin: 1.5rem;
+    }
+
+    .inf-alteracoes{
+
+        input {
+            width: 18rem;
+            text-decoration: none;
+            padding: 10px;
+            outline: none;
+            border: 1px solid black;
+            border-radius: 5px;
+            outline: none;
+            font-size: 15px;
+            margin: 1rem;
+
+        }
+
+    }
+    
+
+    .botoes-alteracoes {
+        .btn-alteracoes {
+            margin: 0.5rem;
+            width: 15rem;
+            height: 2rem;
+            text-decoration: none;
+            background-color: red;
+            color: white;
+            border: solid 1px;
+            border-radius: 5px;
+            transition: all ease-in-out 0.7s;
+        }
+
+        .btn-alteracoes:hover {
+            scale: 1.1;
+        }
+
+        .btn-esquecer-alteracoes {
+            width: 15rem;
+            height: 2rem;
+            text-decoration: none;
+            background-color: #A8D2A0;
+            color: white;
+            border: solid 1px;
+            border-radius: 5px;
+            transition: all ease-in-out 0.7s;
+        }
+
+        .btn-esquecer-alteracoes:hover {
+            scale: 1.1;
+        }
+    }
+}
+
+/* aqui termina popup de alteracao de cadastro */
+
+/* NAVBAR */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    gap: 2rem;
+
+}
+
+.card-pginicial {
+    width: 25rem;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.2);
+    transition: all ease-in-out 0.5s;
+}
+
+.card-pginicial:hover {
+    scale: 1.1;
+}
+
+.card-content {
+    padding: 2rem;
+
+    .btn-card-pginicial {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #325037;
+        color: white;
+        text-decoration: none;
+        border-radius: 15px;
+        margin-top: 1rem;
+    }
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.fundosobrenos {
+    background-image: url(../imagefundos/sobrenos.png);
+    opacity: 90%;
+    padding: 1rem;
+    height: 32rem;
+    width: 80rem;
+    border-radius: 2rem;
+}
+
+/* INDEX  */
+
+/* CARDAPIO PRODUTO  */
+.card-produtos {
+    width: 20rem;
+    height: 30rem;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.2);
+    transition: all ease-in-out 0.5s;
+}
+
+.card-produtos:hover {
+    scale: 1.1;
+}
+
+.card-content-produtos {
+    padding: 2rem;
+
+    .btn-card-pginicial {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #325037;
+        color: white;
+        text-decoration: none;
+        border-radius: 15px;
+        margin-top: 1rem;
+    }
+}
+
+/* CARDAPIO PRODUTO */
+
+/* CARRINHO  */
+
+.box-carrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.interior-carrinho {
+    align-items: center;
+    width: 40rem;
+    height: 55rem;
+    background-color: white;
+    border-radius: 2rem;
+
+    .produtos-carrinho {
+        float: left;
+        padding: 2rem;
+
+
+
+
+        .image-produto {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+
+            img {
+                
+                border-radius: 1rem;
+            }
+
+            
+        }
+        
+        .add-dimin{
+            display: flex;
+            gap: 0.5rem;
+            margin-left: 3rem;
+            
+            
+
+            button{ 
+                width: 1.4rem;
+                height: 1.7rem;
+                border-radius: 0.2rem;
+                border: solid 1px #A8D2A0;
+                background-color: #A8D2A0;
+                color: white;
+                
+
+            }
+            
+        }
+
+
+    }
+
+    .resumo {
+        .resumo-content {
+            padding-top: 10rem;
+        }
+
+        .botoes {
+            
+
+            .finalizar-compra {
+                border: none;
+                border-radius: 10px;
+                padding: 8px 16px;
+                background-color: #325037;
+                margin-bottom: 1rem;
+                transition: all ease-in-out 1s;
+            }
+
+            .finalizar-compra:hover {
+                scale: 1.1;
+            }
+
+            .adicionar-produto {
+                border: none;
+                border-radius: 10px;
+                padding: 8px 16px;
+                background-color: #51B061;
+                transition: all ease-in-out 1s;
+            }
+
+            .adicionar-produto:hover{
+                scale: 1.1;
+            }
+        }
+
+    }
+}
+
+/* CARRINHO  */
+
+/* AGRADECIMENTO  */
+.container-obg{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10rem;
+}
+
+.box-interior-obg{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 65rem;
+    height: 45rem;
+    background-color: white;
+
+    .btn-obg{
+        width: 20rem;
+        height: 2rem;
+        border-radius: 15px;
+        background-color: #A8D2A0;
+        border: none;
+        cursor: pointer;
+        float: right;
+        transition: all ease-in-out 0.5s;
+    }
+
+    
+
+    .obg{
+        width: 90%;
+        height: 15rem;
+        background-color: #A8D2A0;
+        position: relative;
+        top: 0.5rem;
+    }
+
+    .btn:hover{
+        scale: 1.1;
+    }
+}
+
+.footer-interior{
+    width: auto;
+    margin-top: 20rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.rede-social{
+    margin-left: 1.5rem;
+    
+}
+
+.titulocontatos{
+ text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+.contatos{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+    margin: 1.5rem;
+
+}
+
+/* AGRADECIMENTO   */
+
+/* FORMA DE PAGAMENTO  */
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.fundo-forma {
+    display: flex;
+    flex-direction: column;
+    width: 55rem;
+    height: 35rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+
+    h1 {
+        text-align: center;
+        margin: 0.5rem;
+        text-decoration: underline;
+    }
+
+    .imagens {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+
+        img {
+            width: 170px;
+            transition: all ease-in-out 0.8s;
+            cursor: pointer;
+        }
+
+        img:hover {
+            scale: 1.2;
+        }
+
+    }
+
+}
+
+/* daqui para baixo div do pag card */
+
+.box2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.fundo-cartao {
+    position: relative;
+    top: 5rem;
+    background-color: white;
+    width: 25rem;
+    height: 35rem;
+    border-radius: 20px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+
+    h1 {
+        font-size: 1.6rem;
+        text-align: center;
+        text-decoration: underline;
+        padding: 0.5rem;
+    }
+
+    .imagem-cartao {
+        display: flex;
+        justify-content: center;
+    }
+
+    .botao-confirmar {
+        display: flex;
+        justify-content: center;
+    
+        .botao {
+            background-color: #A8D2A0;
+            color: white;
+            border: 2px solid #A8D2A0;
+            border-radius: 5px;
+            text-decoration: none;
+            justify-content: center;
+            width: 15rem;
+            height: 2rem;
+            transition: all ease-in-out 0.7s;
+        }
+        
+        .botao:hover {
+            scale: 1.1;
+        }
+    }
+
+}
+
+
+.inf {
+    margin: 0 auto;
+    position: relative;
+    width: 250px;
+    padding: 1rem;
+
+
+    input {
+        text-decoration: none;
+        width: 100%;
+        padding: 7px;
+        outline: none;
+        border: 1px solid black;
+        border-radius: 5px;
+        outline: none;
+        font-size: 15px;
+    }
+
+
+
+    span {
+        position: absolute;
+        left: 13px;
+        padding: 10px;
+        pointer-events: none;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        transition: 0.5s;
+
+    }
+}
+
+.inf input:valid~span,
+.inf input:focus~span {
+    color: #4bc4da;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.7rem;
+    padding: 0 10px;
+    background: white;
+
+}
+
+/* FORMA DE PAGAMENTO  */
+
+/* CADASTRO DE CEP  */
+.fundo-cep {
+    width: 25rem;
+    height: 33rem;
+    background-color: white;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+    .titulo-cep{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        text-align: center;
+        height: 3rem;
+        border-radius: 0.5rem;
+        color: white;
+        background-color: #a8d2a0;
+    }
+
+    .inf-cep{
+        margin-top: 1.5rem;
+        justify-content: center;
+        
+        input {
+            text-decoration: none;
+            width: 90%;
+            margin-top: 1rem;
+            padding: 7px;
+            outline: none;
+            border: 1px solid black;
+            border-radius: 5px;
+            outline: none;
+            font-size: 15px;
+            
+        }
+    }
+    
+    .confirmar-cep{ 
+        margin-top: 2rem;
+        
+        .botao-cep{ 
+            width: 15rem;
+            height: 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            background-color:   #A8D2A0;
+            color: white;
+            border: 2px solid #A8D2A0;
+            transition: all ease-in-out 0.7s;            
+        }
+        
+        .botao-cep:hover{
+            scale: 1.1;
+        }
+
+    }
+}
+
+/* CADASTRO DE CEP  */
+
+/* FOOTER  */
+@media only screen and (max-width: 610px) and (min-width:412px)  {
+
+    .box3 {
+       min-width: 100%;
+        
+        .holder{
+            padding: 10rem;
+        }
+    }
+  }
+
+.box3{
+    min-width: 100%;
+    background-color: #325037;
+}
+
+.interior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20rem;
+    background-color: #325037;
+    text-align: center;
+    flex-wrap: wrap;
+    font-family: Inter, sans-serif;
+    font-weight: bold; 
+    color: white;
+}
+
+.aside-left{
+    flex: 2;
+}
+
+.holder{
+    display: flex;
+    justify-content: center;
+    align-items: center ; 
+    width: 100vw;
+    flex: 2;
+    flex-wrap: wrap;
+}
+
+.redes-sociais{
+   padding: 1rem;
+   
+   a {
+    text-decoration: none;
+   }
+
+   .rede{
+    margin: 0.5rem;
+    cursor: pointer;
+   }
+    
+}
+
+
+.aside-right{
+    flex: 2;
+}
+
+/* FOOTER  */

@@ -27,18 +27,7 @@ if (isset($_POST['email_cadastrar']) && isset($_POST['senha_cadastrar']) && isse
   <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
   <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet'
     integrity='sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH' crossorigin='anonymous'>
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/cardapioproduto.css">
-  <link rel="stylesheet" href="css/formadepagamento.css">
-  <link rel="stylesheet" href="css/obg.css">
-  <link rel="stylesheet" href="css/cep.css">
-  <link rel="stylesheet" href="css/carrinho.css">
-  <link rel='stylesheet' href='css/style.css'>
-  <link rel="stylesheet" href="css/alteracoes.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <!-- EM PRODUCAO NOVO FOOTER -->
-  <link rel="stylesheet" href="css/footer2.css">
-  <!-- EM PRODUCAO NOVO FOOTER -->
+  <link rel="stylesheet" href="css/global.css">
 
 </head>
 
@@ -81,9 +70,7 @@ if (isset($_POST['email_cadastrar']) && isset($_POST['senha_cadastrar']) && isse
     <div class="fundo-excluir" id="funcoexclusao">
 
       <div class="titulo-excluir">
-        <div class="escrita-excluir">
-          <h2 style="font-weight: bold;">EXCLUIR CONTA</h2>
-        </div>
+        <h2 style="font-weight: bold;">EXCLUIR CONTA</h2>
       </div>
 
       <div class="inf-exclusao">
@@ -112,12 +99,10 @@ if (isset($_POST['email_cadastrar']) && isset($_POST['senha_cadastrar']) && isse
   <!-- html de alteracao de cadstro comeca aqui -->
 
   <div id="container-alterar">
-    <div class="fundo-alterar">
+    <div class="fundo-alterar shadow-lg">
 
       <div class="titulo-alterar">
-        <div class="escrita-alterar">
-          <h3 style="font-weight: bold; font-size: 2rem;">ALTERAÇÃO</h3>
-        </div>
+          <h3 style="font-weight: bold; font-size: 2rem; margin:0;">ALTERAÇÃO</h3>
       </div>
 
       <div class="inf-alteracoes">
