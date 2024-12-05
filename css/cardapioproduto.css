@@ -1,0 +1,47 @@
+body {
+    background-image: url(../imagefundos/fundogelato.png);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Arial";
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    gap: 2rem;
+
+}
+
+.card-produtos {
+    width: 20rem;
+    height: 30rem;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.2);
+    transition: all ease-in-out 0.5s;
+}
+
+.card-produtos:hover {
+    scale: 1.1;
+}
+
+.card-content-produtos {
+    padding: 2rem;
+
+    .btn-card-pginicial {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #325037;
+        color: white;
+        text-decoration: none;
+        border-radius: 15px;
+        margin-top: 1rem;
+    }
+}
