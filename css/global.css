@@ -628,19 +628,63 @@ div i {
 
 /* AGRADECIMENTO  */
 
+@media only screen and (max-width: 610px) and (min-width:344px)  {
+
+    .fundo-agradecimento {
+        
+       .escrita-agradecimento{
+            padding: 5rem;
+       }
+        
+       
+    }
+}
+
 .container-agradecimento{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100%;
-
+    
     .fundo-agradecimento{
         width: 50rem;
-        height: 30rem;
+        padding: 3rem 2rem 3rem 2rem;
         background-color: white;
+        border-radius: 0.5rem;
+        
+        
+        
+        .escrita-agradecimento{
+            padding: 2rem;
+            border-radius: 0.3rem;
+            background-color: #A8D2A0;
+            
+        }
+        
+        .btn-confirmar-agradecimento{
+           
+            
+            button{ 
+                width: 15rem;
+                height: 2rem;
+                border-radius: 0.3rem;
+                background-color: #A8D2A0;
+                color: white;
+                transition: all ease-in-out 1s;
+                
+            }
+            
+            button:hover{
+                scale: 1.1;
+            }
+        }
+        
     }
 }
+
+
+   
 
 
 
@@ -836,7 +880,6 @@ div i {
     
     .confirmar-cep{ 
         margin-top: 2rem;
-        
         .botao-cep{ 
             width: 15rem;
             height: 2rem;
@@ -867,7 +910,7 @@ div i {
             padding: 10rem;
         }
     }
-  }
+}
 
 .box3{
     min-width: 100%;

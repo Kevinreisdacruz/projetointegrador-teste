@@ -149,7 +149,7 @@ if (isset($_POST['email_cadastrar']) && isset($_POST['senha_cadastrar']) && isse
         <img src="imagelogos/user-icon.png" alt="" style="width: 33px; margin-right: 1rem;">
 
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #A8D2A0; border: solid 0px;margin-right: 1rem;">
+          <button class="btn btn-secondary dropdown-toggle border-0 shadow-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #A8D2A0; border: solid 0px;margin-right: 1rem;">
             PERFIL
           </button>
           <ul class="dropdown-menu">
@@ -161,7 +161,7 @@ if (isset($_POST['email_cadastrar']) && isset($_POST['senha_cadastrar']) && isse
 
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="o que você procura ?" aria-label="Search">
-          <button class="btn btn-outline-success pesquisar" type="submit">Procurar</button>
+          <button class="btn btn-outline-success pesquisar border-0 shadow-sm" type="submit">Procurar</button>
         </form>
       </div>
     </div>
