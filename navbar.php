@@ -96,7 +96,7 @@ if (isset($_POST['email_cadastrar']) && isset($_POST['senha_cadastrar']) && isse
   <!-- html da exclusao de cadastro termina aqui -->
 
 
-  <!-- html de alteracao de cadstro comeca aqui -->
+  <!-- html de alteracao de cadastro comeca aqui -->
 
   <div id="container-alterar">
     <div class="fundo-alterar shadow-lg">
@@ -127,7 +127,7 @@ if (isset($_POST['email_cadastrar']) && isset($_POST['senha_cadastrar']) && isse
   <!-- html de alteracao de cadastro termina aqui -->
 
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary navbarcss">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary py-4 navbarcss">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -136,19 +136,19 @@ if (isset($_POST['email_cadastrar']) && isset($_POST['senha_cadastrar']) && isse
       <a href="index.php">
         <img id="logo" src="imagelogos/logo3.png" alt="" width="95">
       </a>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 box-link">
+      <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+        <ul class="navbar-nav mb-2 mb-lg-0 me-auto box-link">
           <li class="nav-item">
-            <a id="login" class="nav-link active link-navbar" aria-current="page">Login</a>
+            <a id="login" class="nav-link active link-navbar " aria-current="page">Login</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active link-navbar" href="carrinho.php">Carrinho</a>
           </li>
         </ul>
 
-        <img src="imagelogos/user-icon.png" alt="" style="width: 33px; margin-right: 1rem;">
-
+        
         <div class="dropdown">
+          <img src="imagelogos/user-icon.png" alt="" style="width: 33px; margin-right: 1rem;">  
           <button class="btn btn-secondary dropdown-toggle border-0 shadow-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #A8D2A0; border: solid 0px;margin-right: 1rem;">
             PERFIL
           </button>
@@ -159,7 +159,7 @@ if (isset($_POST['email_cadastrar']) && isset($_POST['senha_cadastrar']) && isse
           </ul>
         </div>
 
-        <form class="d-flex" role="search">
+        <form class="d-flex my-3" role="search">
           <input class="form-control me-2" type="search" placeholder="o que você procura ?" aria-label="Search">
           <button class="btn btn-outline-success pesquisar border-0 shadow-sm" type="submit">Procurar</button>
         </form>
