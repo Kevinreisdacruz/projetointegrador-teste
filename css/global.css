@@ -19,8 +19,6 @@
 }
 
 
-
-
 body {
     background-image: url(../imagefundos/fundogelato.png);
     height: 100%;
@@ -663,6 +661,7 @@ div i {
     align-items: center;
     height: 100vh;
     width: 100%;
+    padding: 1rem;
     
     .fundo-agradecimento{
         width: 50rem;
@@ -974,9 +973,115 @@ div i {
     
 }
 
-
 .aside-right{
     flex: 2;
 }
 
 /* FOOTER  */
+
+/* ADMINSTRACAO */
+
+.container-admin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+
+    .opcoes-admin{
+        width: 50rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 10px black;
+
+        .escrita-admin{
+            margin: 1rem;
+            background-color: #A8D2A0;
+            color: white;
+        }
+
+        .img-admin{
+
+            img{
+                margin: 2.5rem;
+                cursor: pointer;
+                transition: all ease-in-out 0.5s;
+            }
+            
+            img:hover{
+                scale: 1.1;
+            }
+        }
+    }
+}
+
+/* ADMINISTRACAO */
+
+/* ADICIONAR-PRODUTO */
+
+#container-add-produto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+
+
+    .fundo-add-produto {
+        width: 25rem;
+        height: 34rem;
+        background-color: white;
+        border-radius: 15px;
+        
+
+        .titulo-add-produto {
+            display: flex;
+            justify-content: center;
+            background-color: #a8d2a0;
+            color: white;
+            border-radius: 0.5rem;
+            margin: 1.5rem;
+        }
+
+
+        .inf-add-produto {
+
+            input {
+                text-decoration: none;
+                width: 18rem;
+                padding: 10px;
+                outline: none;
+                border: 1px solid black;
+                border-radius: 5px;
+                outline: none;
+                font-size: 15px;
+                margin: 1rem;
+
+            }
+
+        }
+
+        .botoes-add-produto {
+
+            .btn-add-produto {
+                width: 7rem;
+                height: 2rem;
+                text-decoration: none;
+                background-color: #A8D2A0;
+                color: white;
+                border: solid 1px;
+                border-radius: 5px;
+                transition: all ease-in-out 0.7s;
+            }
+
+            .btn-add-produto:hover {
+                scale: 1.1;
+            }
+        }
+
+    }
+
+}
+/* ADICIONAR-PRODUTO */
