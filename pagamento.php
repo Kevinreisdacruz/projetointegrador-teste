@@ -1,9 +1,13 @@
 <?php
 include 'navbar.php'
 ?>
-<div class="box">
+<div class="container-pagamento">
     <div class="fundo-forma shadow-lg">
-        <h1>ESCOLHA SUA FORMA DE PAGAMENTO</h1>
+        <div class="titulo-pagamento">
+            <div class="escrita-pagamento">
+                <h3 style="color: white;">ESCOLHA SUA FORMA DE PAGAMENTO</h3>
+            </div>
+        </div>
         <div class="imagens">
             <div class="img-cartao">
                 <img class="pagamento" src="imagelogos/cartoes.png" alt="">
@@ -11,7 +15,7 @@ include 'navbar.php'
             <a href="pagamentocartao.html">
                 <img class="pagamento" src="imagelogos/pix.png  " alt="">
             </a>
-            <img class="pagamento" src="imagelogos/money-icon-911ee8.webp" alt="" style="width: 140px;">
+            <img class="pagamento" src="imagelogos/money-icon-911ee8.webp" alt="" >
         </div>
     </div>
 </div>

@@ -13,7 +13,7 @@
 
     }
 
-    h4{
+    h4 {
         font-size: 0.9rem;
     }
 }
@@ -98,9 +98,9 @@ body {
     scale: 1.1;
 }
 
-@media only screen and (max-width: 610px) and (min-width:344px){
+@media only screen and (max-width: 610px) and (min-width:344px) {
 
-    #navbarTogglerDemo03{
+    #navbarTogglerDemo03 {
         flex-direction: column;
         gap: 2rem;
     }
@@ -399,7 +399,7 @@ div i {
         margin: 1.5rem;
     }
 
-    .inf-alteracoes{
+    .inf-alteracoes {
 
         input {
             width: 18rem;
@@ -414,7 +414,7 @@ div i {
         }
 
     }
-    
+
 
     .botoes-alteracoes {
         .btn-alteracoes {
@@ -572,31 +572,31 @@ div i {
             flex-direction: row;
 
             img {
-                
+
                 border-radius: 1rem;
             }
 
-            
+
         }
-        
-        .add-dimin{
+
+        .add-dimin {
             display: flex;
             gap: 0.5rem;
             margin-left: 3rem;
-            
-            
 
-            button{ 
+
+
+            button {
                 width: 1.4rem;
                 height: 1.7rem;
                 border-radius: 0.2rem;
                 border: solid 1px #A8D2A0;
                 background-color: #A8D2A0;
                 color: white;
-                
+
 
             }
-            
+
         }
 
 
@@ -608,7 +608,7 @@ div i {
         }
 
         .botoes {
-            
+
 
             .finalizar-compra {
                 border: none;
@@ -631,7 +631,7 @@ div i {
                 transition: all ease-in-out 1s;
             }
 
-            .adicionar-produto:hover{
+            .adicionar-produto:hover {
                 scale: 1.1;
             }
         }
@@ -643,64 +643,64 @@ div i {
 
 /* AGRADECIMENTO  */
 
-@media only screen and (max-width: 610px) and (min-width:344px)  {
+@media only screen and (max-width: 610px) and (min-width:344px) {
 
     .fundo-agradecimento {
-        
-       .escrita-agradecimento{
+
+        .escrita-agradecimento {
             padding: 5rem;
-       }
-        
-       
+        }
+
+
     }
 }
 
-.container-agradecimento{
+.container-agradecimento {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100%;
     padding: 1rem;
-    
-    .fundo-agradecimento{
+
+    .fundo-agradecimento {
         width: 50rem;
         padding: 3rem 2rem 3rem 2rem;
         background-color: white;
         border-radius: 0.5rem;
-        
-        
-        
-        .escrita-agradecimento{
+
+
+
+        .escrita-agradecimento {
             padding: 2rem;
             border-radius: 0.3rem;
             background-color: #A8D2A0;
-            
+
         }
-        
-        .btn-confirmar-agradecimento{
-           
-            
-            button{ 
+
+        .btn-confirmar-agradecimento {
+
+
+            button {
                 width: 15rem;
                 height: 2rem;
                 border-radius: 0.3rem;
                 background-color: #A8D2A0;
                 color: white;
                 transition: all ease-in-out 1s;
-                
+
             }
-            
-            button:hover{
+
+            button:hover {
                 scale: 1.1;
             }
         }
-        
+
     }
 }
 
 
-   
+
 
 
 
@@ -708,28 +708,37 @@ div i {
 
 /* FORMA DE PAGAMENTO  */
 
-.box {
+.container-pagamento{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
+    padding: 1rem;
 }
 
 .fundo-forma {
     display: flex;
     flex-direction: column;
     width: 55rem;
-    height: 35rem;
+    padding: 0.5rem;
     background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px black;
 
+    .titulo-pagamento{
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+     
 
-    h1 {
-        text-align: center;
-        margin: 0.5rem;
-        text-decoration: underline;
+        .escrita-pagamento{
+            width: 18rem;
+            background-color: #A8D2A0;
+            border-radius: 0.5rem;
+            padding: 1rem;
+        
+        }
     }
 
     .imagens {
@@ -739,11 +748,11 @@ div i {
         width: 100%;
         height: 100%;
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 4rem;
 
 
         img {
-            width: 170px;
+            width: 140px;
             transition: all ease-in-out 0.8s;
             cursor: pointer;
         }
@@ -758,7 +767,7 @@ div i {
 
 /* daqui para baixo div do pag card */
 
-.box2{
+.box2 {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -790,7 +799,7 @@ div i {
     .botao-confirmar {
         display: flex;
         justify-content: center;
-    
+
         .botao {
             background-color: #A8D2A0;
             color: white;
@@ -802,7 +811,7 @@ div i {
             height: 2rem;
             transition: all ease-in-out 0.7s;
         }
-        
+
         .botao:hover {
             scale: 1.1;
         }
@@ -864,11 +873,11 @@ div i {
     padding: 1rem;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 
-    .titulo-cep{
+    .titulo-cep {
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
         text-align: center;
         height: 3rem;
         border-radius: 0.5rem;
@@ -876,10 +885,10 @@ div i {
         background-color: #a8d2a0;
     }
 
-    .inf-cep{
+    .inf-cep {
         margin-top: 1.5rem;
         justify-content: center;
-        
+
         input {
             text-decoration: none;
             width: 90%;
@@ -890,24 +899,25 @@ div i {
             border-radius: 5px;
             outline: none;
             font-size: 15px;
-            
+
         }
     }
-    
-    .confirmar-cep{ 
+
+    .confirmar-cep {
         margin-top: 2rem;
-        .botao-cep{ 
+
+        .botao-cep {
             width: 15rem;
             height: 2rem;
             border-radius: 5px;
             text-decoration: none;
-            background-color:   #A8D2A0;
+            background-color: #A8D2A0;
             color: white;
             border: 2px solid #A8D2A0;
-            transition: all ease-in-out 0.7s;            
+            transition: all ease-in-out 0.7s;
         }
-        
-        .botao-cep:hover{
+
+        .botao-cep:hover {
             scale: 1.1;
         }
 
@@ -917,23 +927,23 @@ div i {
 /* CADASTRO DE CEP  */
 
 /* FOOTER  */
-@media only screen and (max-width: 610px) and (min-width:412px)  {
+@media only screen and (max-width: 610px) and (min-width:412px) {
 
     .box3 {
-       min-width: 100%;
-        
-        .holder{
+        min-width: 100%;
+
+        .holder {
             padding: 10rem;
         }
     }
 }
 
-.box3{
+.box3 {
     min-width: 100%;
     background-color: #325037;
 }
 
-.interior{
+.interior {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -942,38 +952,38 @@ div i {
     text-align: center;
     flex-wrap: wrap;
     font-family: Inter, sans-serif;
-    font-weight: bold; 
+    font-weight: bold;
     color: white;
 }
 
-.aside-left{
+.aside-left {
     flex: 2;
 }
 
-.holder{
+.holder {
     display: flex;
     justify-content: center;
-    align-items: center ; 
+    align-items: center;
     width: 100vw;
     flex: 2;
     flex-wrap: wrap;
 }
 
-.redes-sociais{
-   padding: 1rem;
-   
-   a {
-    text-decoration: none;
-   }
+.redes-sociais {
+    padding: 1rem;
 
-   .rede{
-    margin: 0.5rem;
-    cursor: pointer;
-   }
-    
+    a {
+        text-decoration: none;
+    }
+
+    .rede {
+        margin: 0.5rem;
+        cursor: pointer;
+    }
+
 }
 
-.aside-right{
+.aside-right {
     flex: 2;
 }
 
@@ -981,7 +991,7 @@ div i {
 
 /* ADMINSTRACAO */
 
-.container-admin{
+.container-admin {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -989,27 +999,27 @@ div i {
     height: 100vh;
     padding: 1rem;
 
-    .opcoes-admin{
+    .opcoes-admin {
         width: 50rem;
         background-color: white;
         border-radius: 0.5rem;
         box-shadow: 0 0 10px black;
 
-        .escrita-admin{
+        .escrita-admin {
             margin: 1rem;
             background-color: #A8D2A0;
             color: white;
         }
 
-        .img-admin{
+        .img-admin {
 
-            img{
+            img {
                 margin: 2.5rem;
                 cursor: pointer;
                 transition: all ease-in-out 0.5s;
             }
-            
-            img:hover{
+
+            img:hover {
                 scale: 1.1;
             }
         }
@@ -1034,7 +1044,7 @@ div i {
         height: 34rem;
         background-color: white;
         border-radius: 15px;
-        
+
 
         .titulo-add-produto {
             display: flex;
@@ -1084,4 +1094,58 @@ div i {
     }
 
 }
+
 /* ADICIONAR-PRODUTO */
+
+/* TABLE */
+
+.container-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+    .segura-table {
+        border-radius: 0.5rem;
+        background-color: white;
+        box-shadow: 0 0 10px black;
+
+        .titulo-table {
+            display: flex;
+            justify-content: center;
+            .escrita-table {
+                width: 21rem;
+                border-radius: 0.5rem;
+                background-color: #A8D2A0;
+            }
+        }
+
+        input {
+            text-decoration: none;
+            width: 10rem;
+            padding: 5px;
+            outline: none;
+            border: 1px solid black;
+            border-radius: 5px;
+            outline: none;
+            font-size: 15px;
+            margin: 1rem;
+        }
+
+        select {
+            width: 5rem;
+            padding: 0.3rem;
+            background-color: #A8D2A0;
+            border-radius: 5px;
+
+        }
+
+    }
+
+}
+
+
+
+
+/* TABLE */

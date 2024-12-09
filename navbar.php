@@ -155,7 +155,7 @@ if (isset($_POST['email_cadastrar']) && isset($_POST['senha_cadastrar']) && isse
           <ul class="dropdown-menu">
             <li><button id="alteracao" class="dropdown-item" type="button">INFORMAÇÕES E ALTERAÇÕES</button></li>
             <li><button id="exclusao" class="dropdown-item" type="button">EXCLUIR CONTA</button></li>
-            <li><button class="dropdown-item" type="button"></button></li>
+            <li><button class="dropdown-item" type="button">DESCONECTAR</button></li>
           </ul>
         </div>
 

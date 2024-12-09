@@ -17,7 +17,9 @@ include 'navbar.php';
             <a href="">
                 <img class="icons-admin" src="imagelogos/catalogo-on-line.png" title="ADICIONAR CATÁLOGO" alt="" width="65px">
             </a>
-            <img class="icons-admin" src="imagelogos/cliente.png" alt="" title="CLIENTES" width="65px">
+            <a href="tableclientes.php">
+                <img class="icons-admin" src="imagelogos/cliente.png" alt="" title="CLIENTES" width="65px">
+            </a>
             <img class="icons-admin" src="imagelogos/configs-admin.png" title="ADMINS" alt="" width="65px">
         </div>
 
