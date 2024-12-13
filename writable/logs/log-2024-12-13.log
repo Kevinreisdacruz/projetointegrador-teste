@@ -1,0 +1,523 @@
+CRITICAL - 2024-12-13 18:43:06 --> ErrorException: Undefined variable $route
+[Method: GET, Route: /]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route', 'C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 18:43:19 --> ErrorException: Undefined variable $route
+[Method: GET, Route: /]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route', 'C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 18:55:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "navaar.php"
+[Method: GET, Route: administracao]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('navaar.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('navaar', [], true)
+ 3 APPPATH\Controllers\Usuario.php(12): view('navaar')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->admins()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 18:55:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "navbar.php"
+[Method: GET, Route: administracao]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('navbar.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('navbar', [], true)
+ 3 APPPATH\Controllers\Usuario.php(12): view('navbar')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->admins()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 18:55:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "administrcao.php"
+[Method: GET, Route: administracao]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('administrcao.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('administrcao', [], true)
+ 3 APPPATH\Controllers\Usuario.php(13): view('administrcao')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->admins()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 18:55:46 --> ErrorException: include(navbar.php): Failed to open stream: No such file or directory
+[Method: GET, Route: administracao]
+in APPPATH\Views\administracao.php on line 3.
+ 1 APPPATH\Views\administracao.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navbar.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\administracao.php', 3)
+ 2 APPPATH\Views\administracao.php(3): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\administracao.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('administracao', [], true)
+ 6 APPPATH\Controllers\Usuario.php(13): view('administracao')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->admins()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 18:57:33 --> ErrorException: include(navbar.php): Failed to open stream: No such file or directory
+[Method: GET, Route: administracao]
+in APPPATH\Views\administracao.php on line 3.
+ 1 APPPATH\Views\administracao.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navbar.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\administracao.php', 3)
+ 2 APPPATH\Views\administracao.php(3): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\administracao.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('administracao', [], true)
+ 6 APPPATH\Controllers\Usuario.php(13): view('administracao')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->admins()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 18:57:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admins.php"
+[Method: GET, Route: administracao]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admins.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admins', [], true)
+ 3 APPPATH\Controllers\Usuario.php(13): view('admins')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->admins()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 18:59:13 --> ErrorException: include(navbar.php): Failed to open stream: No such file or directory
+[Method: GET, Route: administracao]
+in APPPATH\Views\pagamento.php on line 2.
+ 1 APPPATH\Views\pagamento.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navbar.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\pagamento.php', 2)
+ 2 APPPATH\Views\pagamento.php(2): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\pagamento.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pagamento', [], true)
+ 6 APPPATH\Controllers\Usuario.php(13): view('pagamento')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->admins()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 18:59:33 --> ErrorException: include(navbar.php): Failed to open stream: No such file or directory
+[Method: GET, Route: administracao]
+in APPPATH\Views\administracao.php on line 3.
+ 1 APPPATH\Views\administracao.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navbar.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\administracao.php', 3)
+ 2 APPPATH\Views\administracao.php(3): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\administracao.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('administracao', [], true)
+ 6 APPPATH\Controllers\Usuario.php(13): view('administracao')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->admins()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:08:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableClientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:09:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableClientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:09:13 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableClientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:09:13 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableClientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:09:13 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableClientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:09:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableClientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:09:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableClientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:09:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableClientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:09:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableClientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:09:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableClientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:09:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableClientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:11:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableclientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:11:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableclientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:11:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableclientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:11:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableclientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:11:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableclientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:11:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableclientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:11:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableclientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:11:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableclientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:11:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableclientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:11:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableclientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:11:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableclientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:11:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableclientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:11:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableclientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:12:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableclientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:12:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableclientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:12:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableclientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:12:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tablecliente.php"
+[Method: GET, Route: tablecliente]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tablecliente.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tablecliente', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('tablecliente')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableclientes()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:18:56 --> ErrorException: include(navbar.php): Failed to open stream: No such file or directory
+[Method: GET, Route: tableadmins]
+in APPPATH\Views\tableadmins.php on line 2.
+ 1 APPPATH\Views\tableadmins.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navbar.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\tableadmins.php', 2)
+ 2 APPPATH\Views\tableadmins.php(2): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\tableadmins.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tableadmins', [], true)
+ 6 APPPATH\Controllers\Usuario.php(20): view('tableadmins')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->tableadmins()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:24:47 --> ErrorException: include(navbar.php): Failed to open stream: No such file or directory
+[Method: GET, Route: addcatalogo]
+in APPPATH\Views\addcatalogo.php on line 2.
+ 1 APPPATH\Views\addcatalogo.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navbar.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\addcatalogo.php', 2)
+ 2 APPPATH\Views\addcatalogo.php(2): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\addcatalogo.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('addcatalogo', [], true)
+ 6 APPPATH\Controllers\Produtos.php(13): view('addcatalogo')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Produtos->addcatalogo()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:27:25 --> ErrorException: include(navbar.php): Failed to open stream: No such file or directory
+[Method: GET, Route: addproduto]
+in APPPATH\Views\addproduto.php on line 2.
+ 1 APPPATH\Views\addproduto.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navbar.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\addproduto.php', 2)
+ 2 APPPATH\Views\addproduto.php(2): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\addproduto.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('addproduto', [], true)
+ 6 APPPATH\Controllers\Produtos.php(20): view('addproduto')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Produtos->addproduto()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 19:33:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/', [], true)
+ 3 APPPATH\Controllers\Main.php(13): view('/')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Main->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

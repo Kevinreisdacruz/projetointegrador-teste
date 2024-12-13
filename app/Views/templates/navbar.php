@@ -18,7 +18,6 @@
 
   <!-- aqui a baixo popup de login -->
 
-
   <form action='' method="post">
     <div id='container-login'>
       <div class='caixa-login' id='caixalogin'>
@@ -116,7 +115,7 @@
         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a href="index.php">
+      <a href="<?=base_url('/');?>">
         <img id="logo" src="assets/imagelogos/logo3.png" alt="" width="95">
       </a>
       <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
@@ -131,7 +130,9 @@
 
         
         <div class="dropdown">
-          <img src="imagelogos/user-icon.png" alt="" style="width: 33px; margin-right: 1rem;">  
+          <a href="<?=base_url('administracao');?>">
+            <img src="assets/imagelogos/user-icon.png" alt="" style="width: 33px; margin-right: 1rem;">  
+          </a>
           <button class="btn btn-secondary dropdown-toggle border-0 shadow-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #A8D2A0; border: solid 0px;margin-right: 1rem;">
             PERFIL
           </button>

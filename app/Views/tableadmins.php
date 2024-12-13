@@ -1,7 +1,3 @@
-<?php
-include 'navbar.php'
-?>
-
 
 <div class="container-table" style="padding: 1rem;">
     <div class="segura-table mx-auto p-2" style="width: 100rem; ">
@@ -46,9 +42,3 @@ include 'navbar.php'
         </table>
     </div>
 </div>
-
-
-
-<?php
-include 'footer.php'
-?>

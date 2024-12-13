@@ -1,6 +1,3 @@
-<?php
-include 'navbar.php'
-?>
 
 <div id="container-add-produto">
     <div class="fundo-add-produto">
@@ -29,7 +26,3 @@ include 'navbar.php'
     </div>
 
 </div>
-
-<?php
-include 'footer.php'
-?>

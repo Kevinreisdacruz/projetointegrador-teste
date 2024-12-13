@@ -11,6 +11,8 @@ class Main extends BaseController
     {
         return view('templates/navbar').
         view('index').
-        view('templates/footer');   
+        view('templates/footer');
     }
+
+    
 }
