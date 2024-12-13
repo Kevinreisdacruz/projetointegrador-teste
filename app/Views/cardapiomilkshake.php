@@ -1,11 +1,8 @@
-<?php
-include 'navbar.php'
-?>
 
 <div class='card-container' data-aos='fade-right'>
 
   <div class='card-produtos'>
-    <img src='imagemilkshake/milkavela.png' alt='' style="width: auto; height: auto;">
+    <img src='assets/imagemilkshake/milkavela.png' alt='' style="width: auto; height: auto;">
     <div class='card-content-produtos'>
       <h3 style=" font-family: 'Anton SC', sans-serif;   font-weight: 400; font-style: normal;">avelã</h3>
       <p style="font-family: Arial, Helvetica, sans-serif;  font-size: 15px; line-height: 1.3;">
@@ -17,7 +14,7 @@ include 'navbar.php'
   </div>
 
   <div class='card-produtos'>
-    <img src='imagemilkshake/milkmorango.png' alt='' style="width: auto; height: auto;">
+    <img src='assets/imagemilkshake/milkmorango.png' alt='' style="width: auto; height: auto;">
     <div class='card-content-produtos'>
       <h3 style=" font-family: 'Anton SC', sans-serif;   font-weight: 400; font-style: normal;">morango</h3>
       <p style="font-family: Arial, Helvetica, sans-serif;  font-size: 15px; line-height: 1.3;">
@@ -29,7 +26,7 @@ include 'navbar.php'
   </div>
 
   <div class='card-produtos'>
-    <img src='imagemilkshake/milkpistache.png' alt='' style="width: auto; height: auto;">
+    <img src='assets/imagemilkshake/milkpistache.png' alt='' style="width: auto; height: auto;">
     <div class='card-content-produtos'>
       <h3 style=" font-family: 'Anton SC', sans-serif;   font-weight: 400; font-style: normal;">pistache</h3>
       <p style="font-family: Arial, Helvetica, sans-serif;  font-size: 15px; line-height: 1.3;">
@@ -44,7 +41,3 @@ include 'navbar.php'
 
 
 </div>
-
-<?php
-include 'footer.php'
-?>

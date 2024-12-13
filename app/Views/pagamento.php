@@ -1,6 +1,4 @@
-<?php
-include 'navbar.php'
-?>
+
 <div class="container-pagamento">
     <div class="fundo-forma shadow-lg">
         <div class="titulo-pagamento">
@@ -10,17 +8,12 @@ include 'navbar.php'
         </div>
         <div class="imagens">
             <div class="img-cartao">
-                <img class="pagamento" src="imagelogos/cartoes.png" alt="">
+                <img class="pagamento" src="assets/imagelogos/cartoes.png" alt="">
             </div>
-            <a href="pagamentocartao.html">
-                <img class="pagamento" src="imagelogos/pix.png  " alt="">
+            <a href="">
+                <img class="pagamento" src="assets/imagelogos/pix.png  " alt="">
             </a>
-            <img class="pagamento" src="imagelogos/money-icon-911ee8.webp" alt="" >
+            <img class="pagamento" src="assets/imagelogos/money-icon-911ee8.webp" alt="" >
         </div>
     </div>
 </div>
-
-
-<?php
-include 'footer.php'
-?>

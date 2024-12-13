@@ -20,4 +20,25 @@ class Produtos extends BaseController
         view('addproduto').
         view('templates/footer');
     }
+
+    public function cardapiomassa()
+    {
+        return view('templates/navbar').
+        view('cardapiomassa').
+        view('templates/footer');
+    }
+
+    public function cardapiomilkshake()
+    {
+        return view('templates/navbar').
+        view('cardapiomilkshake').
+        view('templates/footer');
+    }
+
+    public function cardapiopicole()
+    {
+        return view('templates/navbar').
+        view('cardapiopicoles').
+        view('templates/footer');
+    }
 }

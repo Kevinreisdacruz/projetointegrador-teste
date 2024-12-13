@@ -24,7 +24,7 @@
         naturais.Preparados em pequenos lotes para garantir qualidade, sabores excepcionais, frescor e suavidade a
         clientela.E um verdadeiro deleite para os amantes de sobremesa.
       </p>
-      <a href='cardapiomassa.php' class='btn-card-pginicial shadow'>VEJA MAIS</a>
+      <a href="<?=base_url('cardapiomassa');?>" class='btn-card-pginicial shadow'>VEJA MAIS</a>
     </div>
   </div>
 
@@ -36,7 +36,7 @@
         saborosos. Com a consistência espessa e suave,sera feito em copos altos com canudos largos, com chantilly em
         cima,seguido com suas caldas.
       </p>
-      <a href='cardapiomilkshake.php' class='btn-card-pginicial shadow'>VEJA MAIS</a>
+      <a href="<?=base_url('cardapiomilkshake');?>" class='btn-card-pginicial shadow'>VEJA MAIS</a>   
     </div>
   </div>
 
@@ -48,7 +48,7 @@
         vibrantes, ele lhe promete uma sensação unica com um frescor incrivel a cada mordida com seu exterior crocante
         ou suave.
       </p>
-      <a href='cardapiopicoles.php' class='btn-card-pginicial shadow'>VEJA MAIS</a>
+      <a href="<?=base_url('cardapiopicoles');?>" class='btn-card-pginicial shadow'>VEJA MAIS</a>
     </div>
   </div>
 </div>

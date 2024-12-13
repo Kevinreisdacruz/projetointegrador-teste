@@ -1,12 +1,9 @@
-<?php
-include 'navbar.php'
-?>
 
 <div class="box-carrinho">
   <div class="interior-carrinho shadow">
     <div class="produtos-carrinho">
       <div class="image-produto">
-        <img src="imagemassa/massamenta-carrinho.png" alt="">
+        <img src="assets/imagemassa/massamenta-carrinho.png" alt="">
         <h6 style="font-weight: bold; padding-left: 1rem;">SORVETE  MASSA DE MENTA</h6> 
       </div><br>
       <div class="add-dimin">
@@ -17,7 +14,7 @@ include 'navbar.php'
       
 
       <div class="image-produto">
-        <img src="imagemilkshake/milkpistache-carrinho.png" alt="">
+        <img src="assets/imagemilkshake/milkpistache-carrinho.png" alt="">
         <h6 style="font-weight: bold; padding-left: 1rem;">MILKSHAKE DE PISTACHE</h6> 
       
       </div><br>
@@ -29,7 +26,7 @@ include 'navbar.php'
       
 
       <div class="image-produto">
-        <img src="imagepicoles/picolechocolate-carrinho.png" alt="">
+        <img src="assets/imagepicoles/picolechocolate-carrinho.png" alt="">
         <h6 style="font-weight: bold; padding-left: 1rem;">PICOLE DE CHOCOLATE</h6> 
       </div><br>
       <div class="add-dimin">
@@ -52,7 +49,7 @@ include 'navbar.php'
       </div>
 
       <div class="botoes">
-        <a href="./pagamento.php">
+        <a href="<?=base_url('pagamento');?>">
         <button class="finalizar-compra shadow-sm" style="font-weight: bold; color: white;">FINALIZAR COMPRA</button><br>
         </a>
         <a href="index.php#scroll" >
@@ -63,7 +60,3 @@ include 'navbar.php'
     </div>
   </div>
 </div>
-
-<?php
-include 'footer.php'
-?>

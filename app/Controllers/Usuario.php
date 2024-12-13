@@ -21,11 +21,23 @@ class Usuario extends BaseController
         view('templates/footer');
     }
 
-
-
     public function tableclientes(){
         return view('templates/navbar').
         view('tableclientes').
         view('templates/footer');
     }
+
+    public function carrinho(){
+        return view('templates/navbar').
+        view('carrinho').
+        view('templates/footer');
+    }
+
+    public function pagamento()
+    {
+        return view('templates/navbar').
+        view('pagamento').
+        view('templates/footer');
+    }
+
 }
