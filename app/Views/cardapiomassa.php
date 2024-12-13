@@ -9,7 +9,7 @@
       Sorvete cremoso de chocolate belga, com pedaços crocantes e textura suave, equilibrando doçura intensa e notas amargas de cacau.
       <br><br><span style="font-weight: bold;">R$:40,00</span><br>
       </p>
-      <a href='' class='btn-card-pginicial shadow'>COMPRAR</a>
+      <a href="" class='btn-card-pginicial shadow'>COMPRAR</a>
     </div>
   </div>
 
@@ -21,7 +21,7 @@
       Sorvete de menta refrescante, com sabor suave e cremosidade delicada, proporcionando uma sensação fresca e revigorante.
       <br><br><span style="font-weight: bold;">R$:40,00</span><br>
       </p>
-      <a href='' class='btn-card-pginicial shadow'>COMPRAR</a>
+      <a href="" class='btn-card-pginicial shadow'>COMPRAR</a>
     </div>
   </div>
 
@@ -33,7 +33,7 @@
       Sorvete leve e refrescante de morango, com sabor doce e levemente ácido, realçado por pedaços de fruta fresca.
       <br><br><span style="font-weight: bold;">R$:40,00</span><br>
       </p>
-      <a href='' class='btn-card-pginicial shadow'>COMPRAR</a>
+      <a href="" class='btn-card-pginicial shadow'>COMPRAR</a>
     </div>
   </div>
 

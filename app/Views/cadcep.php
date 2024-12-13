@@ -1,6 +1,3 @@
-<?php
-include 'navbar.php'
-?>
 
 <div class="box">
     <div class="fundo-cep">
@@ -19,11 +16,9 @@ include 'navbar.php'
         </div>
 
         <div class="confirmar-cep">
-            <button class="botao-cep" style="font-weight: bold;">CONFIRMAR ENDEREÇO</button>
+            <a href="<?=base_url('pagamento');?>">
+                <button class="botao-cep" style="font-weight: bold;">CONFIRMAR ENDEREÇO</button>
+            </a>
         </div>
     </div>
 </div>
-
-<?php
-include 'footer.php'
-?>

@@ -566,3 +566,18 @@ in APPPATH\Views\cardapiopicoles.php on line 2.
 10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
 11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 21:03:50 --> ErrorException: include(navbar.php): Failed to open stream: No such file or directory
+[Method: GET, Route: agradecimento]
+in APPPATH\Views\agradecimento.php on line 2.
+ 1 APPPATH\Views\agradecimento.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navbar.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\agradecimento.php', 2)
+ 2 APPPATH\Views\agradecimento.php(2): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\agradecimento.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('agradecimento', [], true)
+ 6 APPPATH\Controllers\Usuario.php(53): view('agradecimento')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->agradecimento()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

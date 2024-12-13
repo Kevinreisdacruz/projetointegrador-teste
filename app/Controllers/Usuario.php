@@ -33,10 +33,31 @@ class Usuario extends BaseController
         view('templates/footer');
     }
 
+    public function cep(){
+        return view('templates/navbar').
+        view('cadcep').
+        view('templates/footer');
+    }
+    
+
     public function pagamento()
     {
         return view('templates/navbar').
         view('pagamento').
+        view('templates/footer');
+    }
+
+    public function pagamentocartao()
+    {
+        return view('templates/navbar').
+        view('pagamentocartao').
+        view('templates/footer');
+    }
+
+    public function agradecimento()
+    {
+        return view('templates/navbar').
+        view('agradecimento').
         view('templates/footer');
     }
 

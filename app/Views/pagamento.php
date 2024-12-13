@@ -8,7 +8,9 @@
         </div>
         <div class="imagens">
             <div class="img-cartao">
-                <img class="pagamento" src="assets/imagelogos/cartoes.png" alt="">
+                <a href="<?=base_url('pagamentocartao'); ?>">
+                    <img class="pagamento" src="assets/imagelogos/cartoes.png" alt="">
+                </a>
             </div>
             <a href="">
                 <img class="pagamento" src="assets/imagelogos/pix.png  " alt="">

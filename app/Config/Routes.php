@@ -13,10 +13,12 @@ $routes->get('tableadmins' , 'Usuario::tableadmins');
 $routes->get('tableclientes' , 'Usuario::tableclientes');
 $routes->get('carrinho', 'usuario::carrinho');
 $routes->get('pagamento', 'usuario::pagamento');
+$routes->get('pagamentocartao', 'usuario::pagamentocartao');
+$routes->get('agradecimento', 'usuario::agradecimento');
+$routes->get('cadcep', 'usuario::cep');
 
 $routes->get('addcatalogo', 'produtos::addcatalogo');
 $routes->get('addproduto', 'produtos::addproduto');
 $routes->get('cardapiomassa', 'produtos::cardapiomassa');
 $routes->get('cardapiomilkshake', 'produtos::cardapiomilkshake');
 $routes->get('cardapiopicoles', 'produtos::cardapiopicole');
-

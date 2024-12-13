@@ -49,7 +49,7 @@
       </div>
 
       <div class="botoes">
-        <a href="<?=base_url('pagamento');?>">
+        <a href="<?=base_url('cadcep');?>">
         <button class="finalizar-compra shadow-sm" style="font-weight: bold; color: white;">FINALIZAR COMPRA</button><br>
         </a>
         <a href="index.php#scroll" >
