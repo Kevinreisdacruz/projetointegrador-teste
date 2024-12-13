@@ -581,3 +581,151 @@ in APPPATH\Views\agradecimento.php on line 2.
 10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
 11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 22:30:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "atualizarcatalogocatalogo.php"
+[Method: GET, Route: atualizarcatalogo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('atualizarcatalogocatalogo.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('atualizarcatalogocatalogo', [], true)
+ 3 APPPATH\Controllers\Produtos.php(20): view('atualizarcatalogocatalogo')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Produtos->atualizarcatalogo()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 22:46:15 --> ErrorException: Undefined variable $title
+[Method: GET, Route: administracao]
+in APPPATH\Views\templates\navbar.php on line 7.
+ 1 APPPATH\Views\templates\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\templates\\navbar.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\templates\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/navbar', [], true)
+ 5 APPPATH\Controllers\Usuario.php(12): view('templates/navbar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->administracao()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 22:47:54 --> ErrorException: Undefined variable $title
+[Method: GET, Route: administracao]
+in APPPATH\Views\templates\navbar.php on line 7.
+ 1 APPPATH\Views\templates\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\templates\\navbar.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\templates\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/navbar', [], true)
+ 5 APPPATH\Controllers\Usuario.php(12): view('templates/navbar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->administracao()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 22:49:50 --> ErrorException: Undefined variable $title
+[Method: GET, Route: atualizarcatalogo]
+in APPPATH\Views\templates\navbar.php on line 7.
+ 1 APPPATH\Views\templates\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\templates\\navbar.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\templates\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/navbar', [], true)
+ 5 APPPATH\Controllers\Produtos.php(21): view('templates/navbar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Produtos->atualizarcatalogo()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 22:50:30 --> ErrorException: Undefined variable $title
+[Method: GET, Route: addproduto]
+in APPPATH\Views\templates\navbar.php on line 7.
+ 1 APPPATH\Views\templates\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\templates\\navbar.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\templates\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/navbar', [], true)
+ 5 APPPATH\Controllers\Produtos.php(29): view('templates/navbar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Produtos->addproduto()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 22:50:40 --> ErrorException: Undefined variable $titulo
+[Method: GET, Route: addproduto]
+in APPPATH\Controllers\Produtos.php on line 29.
+ 1 APPPATH\Controllers\Produtos.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Controllers\\Produtos.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Produtos->addproduto()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 22:52:58 --> ErrorException: Undefined variable $title
+[Method: GET, Route: carrinho]
+in APPPATH\Views\templates\navbar.php on line 7.
+ 1 APPPATH\Views\templates\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\templates\\navbar.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\templates\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/navbar', [], true)
+ 5 APPPATH\Controllers\Usuario.php(34): view('templates/navbar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->carrinho()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 22:53:29 --> ErrorException: Undefined variable $title
+[Method: GET, Route: cadcep]
+in APPPATH\Views\templates\navbar.php on line 7.
+ 1 APPPATH\Views\templates\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\templates\\navbar.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\templates\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/navbar', [], true)
+ 5 APPPATH\Controllers\Usuario.php(41): view('templates/navbar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->cep()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 22:54:08 --> ErrorException: Undefined variable $title
+[Method: GET, Route: pagamentocartao]
+in APPPATH\Views\templates\navbar.php on line 7.
+ 1 APPPATH\Views\templates\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\templates\\navbar.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\templates\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/navbar', [], true)
+ 5 APPPATH\Controllers\Usuario.php(57): view('templates/navbar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->pagamentocartao()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 22:54:37 --> ErrorException: Undefined variable $title
+[Method: GET, Route: pagamento]
+in APPPATH\Views\templates\navbar.php on line 7.
+ 1 APPPATH\Views\templates\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\templates\\navbar.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\templates\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/navbar', [], true)
+ 5 APPPATH\Controllers\Usuario.php(50): view('templates/navbar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->pagamento()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-13 22:55:18 --> ErrorException: Undefined variable $title
+[Method: GET, Route: agradecimento]
+in APPPATH\Views\templates\navbar.php on line 7.
+ 1 APPPATH\Views\templates\navbar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\templates\\navbar.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\projetointegrador-teste\\app\\Views\\templates\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/navbar', [], true)
+ 5 APPPATH\Controllers\Usuario.php(66): view('templates/navbar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->agradecimento()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

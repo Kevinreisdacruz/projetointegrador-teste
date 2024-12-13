@@ -9,32 +9,37 @@ class Usuario extends BaseController
 {
     public function administracao()
     {
-        return view('templates/navbar') .
+        $titulos['title']='ADMINISTRACAO';
+        return view('templates/navbar', $titulos) .
         view('administracao') .
         view('templates/footer');
     }
 
+    public function tableclientes(){
+        $titulos['title']='TABELA DE CLIENTES';
+        return view('templates/navbar', $titulos).
+        view('tableclientes').
+        view('templates/footer');
+    }
     public function tableadmins()
     {
-        return view('templates/navbar') .
+        $titulos['title']='TABELA DE ADMINS';
+        return view('templates/navbar', $titulos) .
         view('tableadmins') .
         view('templates/footer');
     }
 
-    public function tableclientes(){
-        return view('templates/navbar').
-        view('tableclientes').
-        view('templates/footer');
-    }
 
     public function carrinho(){
-        return view('templates/navbar').
+        $titulos['title']='CARRINHO';
+        return view('templates/navbar', $titulos).
         view('carrinho').
         view('templates/footer');
     }
 
     public function cep(){
-        return view('templates/navbar').
+        $titulos['title']='ENDEREÇO';
+        return view('templates/navbar', $titulos).
         view('cadcep').
         view('templates/footer');
     }
@@ -42,21 +47,24 @@ class Usuario extends BaseController
 
     public function pagamento()
     {
-        return view('templates/navbar').
+        $titulos['title']='FORMA DE PAGAMENTO';
+        return view('templates/navbar', $titulos).
         view('pagamento').
         view('templates/footer');
     }
 
     public function pagamentocartao()
     {
-        return view('templates/navbar').
+        $titulos['title']='PAGAMENTO CARTÃO';
+        return view('templates/navbar', $titulos).
         view('pagamentocartao').
         view('templates/footer');
     }
 
     public function agradecimento()
     {
-        return view('templates/navbar').
+        $titulos['title']='AGRADECIMENTO';
+        return view('templates/navbar', $titulos).
         view('agradecimento').
         view('templates/footer');
     }

@@ -58,6 +58,7 @@ body {
 
     a {
         cursor: pointer;
+        text-decoration: none;
     }
 
 }
@@ -1000,10 +1001,14 @@ div i {
     padding: 1rem;
 
     .opcoes-admin {
-        width: 50rem;
         background-color: white;
         border-radius: 0.5rem;
         box-shadow: 0 0 10px black;
+        
+
+        a{
+            text-decoration: none;
+        }
 
         .escrita-admin {
             margin: 1rem;
@@ -1012,11 +1017,12 @@ div i {
         }
 
         .img-admin {
-
+           
             img {
                 margin: 2.5rem;
                 cursor: pointer;
                 transition: all ease-in-out 0.5s;
+             
             }
 
             img:hover {
@@ -1041,7 +1047,7 @@ div i {
 
     .fundo-add-produto {
         width: 25rem;
-        height: 34rem;
+        padding: 0.3rem;
         background-color: white;
         border-radius: 15px;
 
@@ -1055,7 +1061,11 @@ div i {
             margin: 1.5rem;
         }
 
+        select{
+            width: 18rem;
+            text-decoration: none;
 
+        }
         .inf-add-produto {
 
             input {

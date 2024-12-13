@@ -9,7 +9,8 @@ class Main extends BaseController
 {
     public function index()
     {
-        return view('templates/navbar').
+        $titulos['title']='PAGINA INICIAL';
+        return view('templates/navbar', $titulos).
         view('index').
         view('templates/footer');
     }

@@ -1,3 +1,18 @@
+function mostrarsenha(){
+  var inputpass = document.getElementById('senha')
+  var btnshowpass = document.getElementById('btn-senha')
+
+  if(inputpass.type === 'password'){
+      inputpass.setAttribute('type','text')
+      btnshowpass.classList.replace('bi-eye-fill','bi-eye-slash-fill')
+  }else{
+      inputpass.setAttribute('type','password')
+
+      btnshowpass.classList.replace('bi-eye-slash-fill','bi-eye-fill')
+  }
+
+}
+
 var caixalogin = document.getElementById('container-login');
 var login = document.getElementById('login');
 var  caixaentrar = document.getElementById('caixalogin')
@@ -54,6 +69,10 @@ function alterar(){
   caixaalterar.style.display = "flex";
 
 };
+
+$('#data').mask('00/00');
+$('#cod-seguranca').mask('000');
+$('#num-card').mask('0000 0000 0000 0000');
 
 AOS.init()
 

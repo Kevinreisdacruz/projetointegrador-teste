@@ -13,10 +13,10 @@
         </div>
 
         <div class="botoes-add-produto">
-            <a href="index.php">
+            <a href="<?=base_url('/');?>">
                 <button class="btn-add-produto">ADICIONAR PRODUTO</button><br>
             </a>
-            <a href="administracao.php">
+            <a href="<?=base_url('administracao');?>">
                 <button class="btn-add-produto">CANCELAR</button>
             </a>
         </div>
