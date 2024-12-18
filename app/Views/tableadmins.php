@@ -1,3 +1,12 @@
+<script>
+    function confirma(){
+        if (! confirm('Deseja excluir esse admin?')){
+            return false;
+        }
+        return true;
+    }
+</script>
+
 
 <div class="container-table" style="padding: 1rem;">
     <div class="segura-table mx-auto p-2" style="width: 100rem; ">
@@ -14,31 +23,28 @@
                 <option value="">NOME</option>
             </select>
         </div>
+
         <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">NOME</th>
-                    <th scope="col">EMAIL</th>
-                </tr>
-            </thead>
-            <tbody style="height: 10rem;">
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry the Bird</td>
-                    <td>kevin</td>
-                </tr>
-            </tbody>
+            <tr>
+                <th>ID</th>
+                <th>NOME</th>
+                <th>EMAIL</th>
+                <th>TELEFONE</th>
+                <th>EDITAR</th>
+                <th>EXCLUIR</th>
+            </tr>
+            <?php foreach ($tableadmins as $admins) : ?>
+                <td><?php echo $admins['IdUsuario'] ?></td>
+                <td><?php echo $admins['nome'] ?></td>
+                <td><?php echo $admins['email'] ?></td>
+                <td><?php echo $admins['telefone'] ?></td>
+                <td><?php echo anchor('admins/editar/' .$admins['IdUsuario'], 'EDITAR') ?></td>
+                <td><?php echo anchor('admins/excluir/' .$admins['IdUsuario'], 'EXCLUIR', ['onclick' => 'return confirma()']) ?></td>
+
+            <?php endforeach;  ?>
+
         </table>
+
+
     </div>
 </div>

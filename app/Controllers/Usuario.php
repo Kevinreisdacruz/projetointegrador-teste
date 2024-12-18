@@ -3,10 +3,19 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\UsuarioModel;
 use CodeIgniter\HTTP\ResponseInterface;
 
 class Usuario extends BaseController
 {
+
+    private  $UsuarioModel;
+
+    public function  __construct()
+    {
+        $this->UsuarioModel = new UsuarioModel();      
+    }
+
     public function administracao()
     {
         $titulos['title']='ADMINISTRACAO';
@@ -23,10 +32,23 @@ class Usuario extends BaseController
     }
     public function tableadmins()
     {
-        $titulos['title']='TABELA DE ADMINS';
-        return view('templates/navbar', $titulos) .
-        view('tableadmins') .
+        $titulos['title']="TABELA DE ADMINS";
+        return view('templates/navbar', $titulos).
+         view('tableadmins',[
+            'tableadmins' => $this->UsuarioModel->findAll()
+        ]).
         view('templates/footer');
+    }
+
+    public function deletar($IdUsuario)
+    {
+        if ($this->UsuarioModel->delete($IdUsuario)){
+            echo view('messages', [
+                'message' => 'ususario excluido com suecesso'
+            ]);
+        }else{
+            echo "erro.";
+        }
     }
 
 
