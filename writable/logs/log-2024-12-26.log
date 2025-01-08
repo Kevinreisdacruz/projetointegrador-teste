@@ -1,0 +1,255 @@
+CRITICAL - 2024-12-26 20:03:48 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:04:30 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:10:14 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:10:20 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:09 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:11 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:11 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:11 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:11 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:11 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:11 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:12 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:12 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:12 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:12 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:12 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:12 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:12 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:13 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:13 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:13 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:13 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:13 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:13 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 20:12:13 --> ArgumentCountError: Too few arguments to function App\Controllers\Usuario::deletar(), 0 passed in C:\xampp\htdocs\projetointegrador-teste\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuariodelete]
+in APPPATH\Controllers\Usuario.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->deletar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 21:01:06 --> Error: Object of type CodeIgniter\Router\RouteCollection is not callable
+[Method: GET, Route: tableadmins]
+in APPPATH\Config\Routes.php on line 19.
+ 1 SYSTEMPATH\Router\RouteCollection.php(340): require()
+ 2 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 21:02:01 --> Error: Cannot use object of type CodeIgniter\Router\RouteCollection as array
+[Method: GET, Route: tableadmins]
+in APPPATH\Config\Routes.php on line 19.
+ 1 SYSTEMPATH\Router\RouteCollection.php(340): require()
+ 2 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-26 21:02:09 --> Error: Cannot use object of type CodeIgniter\Router\RouteCollection as array
+[Method: GET, Route: tableadmins]
+in APPPATH\Config\Routes.php on line 19.
+ 1 SYSTEMPATH\Router\RouteCollection.php(340): require()
+ 2 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

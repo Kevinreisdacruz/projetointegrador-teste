@@ -17,6 +17,19 @@ $routes->get('pagamentocartao', 'usuario::pagamentocartao');
 $routes->get('agradecimento', 'usuario::agradecimento');
 $routes->get('cadcep', 'usuario::cep');
 
+//CADASTRO
+
+$routes->get('cadastro', 'usuario::cadastro');
+$routes->get('/Usuario/cadastro', 'usuario::cadastro', ['as' => 'usuario.cadastro']);
+$routes->post('/Usuario/validacao', 'usuario::validacao', ['as' => 'usuario.validacao']);
+
+//CADASTRO
+
+//LOGIN
+
+
+//LOGIN
+
 $routes->get('addcatalogo', 'produtos::addcatalogo');
 $routes->get('atualizarcatalogo', 'produtos::atualizarcatalogo');
 $routes->get('addproduto', 'produtos::addproduto');

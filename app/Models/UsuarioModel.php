@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use ReturnTypeWillChange;
 
 class UsuarioModel extends Model
 {
@@ -15,7 +16,8 @@ class UsuarioModel extends Model
     protected $allowedFields    = [
         'nome',
         'email',
-        'telefone'
+        'telefone',
+        'senha'
     ];
 
     protected bool $allowEmptyInserts = false;
@@ -32,7 +34,11 @@ class UsuarioModel extends Model
     protected $deletedField  = 'deleted_at';
 
     // Validation
-    protected $validationRules      = [];
+    protected $validationRules      = [
+        // 'email_cadastrar'        => 'required|valid_email|is_unique[clienteusuario.email]',
+        // 'senha_cadastrar'     => 'required',
+        // 'telefone_cadastrar' => 'required',
+    ];
     protected $validationMessages   = [];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;

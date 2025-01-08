@@ -1,12 +1,26 @@
-<script>
-    function confirma(){
-        if (! confirm('Deseja excluir esse admin?')){
-            return false;
-        }
-        return true;
-    }
-</script>
 
+<!-- exclusao de admin -->
+
+<div id="container-confirmar-exclusao-admin">
+    <div class="fundo-confrimar-exclusao-admin shadow-lg">
+
+        <div class="titulo-exclusao-admin">
+            <h3 style="font-weight: bold; font-size: 2rem; margin:0;">EXCLUIR?</h3>
+        </div>
+
+        <div class="botoes-confirmar-acao">
+            <a href="<?= base_url('tableadmins'); ?>">
+                <button  class="btn-confirmar-exclusao-admin" onclick="excluiradmin()" style="font-weight: bold;">CONFIRMAR EXCLUSÃO</button><br>
+            </a>
+            <a href="<?= base_url('tableadmins'); ?>">
+                <button class="btn-esquecer-exclusao-admin" style="font-weight: bold;">CANCELAR  EXCLUSÃO</button>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<!-- exclusao de admin -->
 
 <div class="container-table" style="padding: 1rem;">
     <div class="segura-table mx-auto p-2" style="width: 100rem; ">
@@ -30,19 +44,16 @@
                 <th>NOME</th>
                 <th>EMAIL</th>
                 <th>TELEFONE</th>
-                <th>EDITAR</th>
                 <th>EXCLUIR</th>
             </tr>
             <?php foreach ($tableadmins as $admins) : ?>
-                <td><?php echo $admins['IdUsuario'] ?></td>
-                <td><?php echo $admins['nome'] ?></td>
-                <td><?php echo $admins['email'] ?></td>
-                <td><?php echo $admins['telefone'] ?></td>
-                <td><?php echo anchor('admins/editar/' .$admins['IdUsuario'], 'EDITAR') ?></td>
-                <td><?php echo anchor('admins/excluir/' .$admins['IdUsuario'], 'EXCLUIR', ['onclick' => 'return confirma()']) ?></td>
+                <td><?= $admins['IdUsuario'] ?></td>
+                <td><?= $admins['nome'] ?></td>
+                <td><?= $admins['email'] ?></td>
+                <td><?= $admins['telefone'] ?></td>
+                <td><?php echo anchor('usuario/delete/' . $admins['IdUsuario'] , 'EXCLUIR') ?></td>
 
             <?php endforeach;  ?>
-
         </table>
 
 

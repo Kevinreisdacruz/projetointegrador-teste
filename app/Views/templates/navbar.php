@@ -4,7 +4,7 @@
 <head>
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <title><?=esc($title)?></title>
+  <title><?= esc($title) ?></title>
   <link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'>
   <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
   <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet'
@@ -17,7 +17,6 @@
 
   <!-- aqui a baixo popup de login -->
 
-
   <div id='container-login'>
     <div class='caixa-login' id='caixalogin'>
       <h1 style="font-weight: bold;">Login</h1>
@@ -29,17 +28,24 @@
       <br><br>
 
       <a href="<?= base_url('/'); ?>">
-        <button>ENTRAR</button>
+        <button>
+          ENTRAR
+        </button>
+
       </a>
       <br><br>
 
-      <h6 class="criar">Não tem uma conta?</h6>
+      <a href="<?= base_url('cadastro'); ?>">
+        <button>
+          <h6 class="criar">Não tem uma conta?</h6>
+        </button>
+      </a>
+
       <a href="<?= base_url('/'); ?>" style="color: black;">
         <h6>Não desejo me conectar agora</h6>
       </a>
     </div>
   </div>
-
 
 
   <!-- aqui termina o popup de login -->
