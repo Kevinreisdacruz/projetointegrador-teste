@@ -6,7 +6,7 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
-$routes->get('/', 'Main::index');
+$routes->get('/', 'Main::index',['as' => 'home']);
 
 $routes->get('administracao' , 'Usuario::administracao');
 $routes->get('tableadmins' , 'Usuario::tableadmins');
@@ -26,6 +26,11 @@ $routes->post('/Usuario/validacao', 'usuario::validacao', ['as' => 'usuario.vali
 //CADASTRO
 
 //LOGIN
+
+// $routes->get('login', 'Usuario::login');
+$routes->get('/login', 'Usuario::login', ['as' => 'login']);
+$routes->post('/login', 'Usuario::entrar', ['as' => 'usuario.entrar']);
+$routes->get('/login/sair', 'Usuario::sair', ['as' => 'usuario.sair']);
 
 
 //LOGIN

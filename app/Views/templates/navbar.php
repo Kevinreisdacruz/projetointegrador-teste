@@ -15,42 +15,6 @@
 
 <body>
 
-  <!-- aqui a baixo popup de login -->
-
-  <div id='container-login'>
-    <div class='caixa-login' id='caixalogin'>
-      <h1 style="font-weight: bold;">Login</h1>
-      <input name="email" type='email' placeholder='E-mail'>
-      <br><br>
-
-      <input name="senha" type='password' id='senha' placeholder='Senha'>
-      <i class='bi bi-eye-fill' id='btn-senha' onclick='mostrarsenha()'></i>
-      <br><br>
-
-      <a href="<?= base_url('/'); ?>">
-        <button>
-          ENTRAR
-        </button>
-
-      </a>
-      <br><br>
-
-      <a href="<?= base_url('cadastro'); ?>">
-        <button>
-          <h6 class="criar">Não tem uma conta?</h6>
-        </button>
-      </a>
-
-      <a href="<?= base_url('/'); ?>" style="color: black;">
-        <h6>Não desejo me conectar agora</h6>
-      </a>
-    </div>
-  </div>
-
-
-  <!-- aqui termina o popup de login -->
-
-
   <!-- aqui a baixo e o html do popup de exclusao de conta -->
 
   <div id="container-excluir">
@@ -126,7 +90,10 @@
       <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
         <ul class="navbar-nav mb-2 mb-lg-0 me-auto box-link">
           <li class="nav-item">
-            <a id="login" class="nav-link active link-navbar " aria-current="page">Login</a>
+            <a href="<?=base_url('login'); ?>" id="login" class="nav-link active link-navbar " aria-current="page">Login</a>
+            <?php if(session()->has('usuario')) : ?>
+              Olá, <?php echo session()->get('usuario')->nome ?>
+            <?php endif ?>
           </li>
           <li class="nav-item">
             <a class="nav-link active link-navbar" href="<?= base_url('carrinho'); ?>">Carrinho</a>
@@ -144,7 +111,7 @@
           <ul class="dropdown-menu">
             <li><button id="alteracao" class="dropdown-item" type="button">INFORMAÇÕES E ALTERAÇÕES</button></li>
             <li><button id="exclusao" class="dropdown-item" type="button">EXCLUIR CONTA</button></li>
-            <li><button class="dropdown-item" type="button">DESCONECTAR</button></li>
+            <li><a href="<?=url_to('usuario.sair') ?>"><button class="dropdown-item" type="button">DESCONECTAR</button></a></li>
           </ul>
         </div>
 

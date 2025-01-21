@@ -111,13 +111,10 @@ body {
 
 /* aqui comeca o css do popup de login */
 #container-login {
-    position: fixed;
-    display: none;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100vw;
-    z-index: 2;
     padding: 1.5rem;
     backdrop-filter: blur(2px);
 
@@ -133,7 +130,6 @@ body {
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 0 10px black;
-    animation: animacao-login 1s;
 
     input {
         padding: 10px;
