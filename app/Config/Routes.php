@@ -25,13 +25,18 @@ $routes->post('/Usuario/validacao', 'usuario::validacao', ['as' => 'usuario.vali
 
 //CADASTRO
 
+//CADASTRO CATALOGO
+
+$routes->post('/addcatalogo/validacao', 'Produtos::validacaoCatalogo', ['as' => 'addcatalogo.validacao']);
+
+//CADASTRO CATALOGO
+
 //LOGIN
 
 // $routes->get('login', 'Usuario::login');
 $routes->get('/login', 'Usuario::login', ['as' => 'login']);
 $routes->post('/login', 'Usuario::entrar', ['as' => 'usuario.entrar']);
 $routes->get('/login/sair', 'Usuario::sair', ['as' => 'usuario.sair']);
-
 
 //LOGIN
 

@@ -1,1 +1,0 @@
-__ci_last_regenerate|i:1736360456;_ci_previous_url|s:53:"http://localhost/projetointegrador-teste/public/login";_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:2:{s:5:"email";s:22:"karinemaiane@gmail.com";s:5:"senha";s:13:"jadkajdkjasdj";}}__ci_vars|a:2:{s:13:"_ci_old_input";s:3:"old";s:10:"erro_geral";s:3:"old";}erro_geral|s:24:"Email ou Senha incorreto";

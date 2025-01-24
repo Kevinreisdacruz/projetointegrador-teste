@@ -1,1 +1,0 @@
-__ci_last_regenerate|i:1736194009;_ci_previous_url|s:56:"http://localhost/projetointegrador-teste/public/cadastro";errors|a:3:{s:15:"email_cadastrar";s:38:"The email_cadastrar field is required.";s:15:"senha_cadastrar";s:38:"The senha_cadastrar field is required.";s:18:"telefone_cadastrar";s:41:"The telefone_cadastrar field is required.";}__ci_vars|a:1:{s:6:"errors";s:3:"new";}

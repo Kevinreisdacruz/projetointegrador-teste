@@ -1,1 +1,0 @@
-__ci_last_regenerate|i:1736197483;_ci_previous_url|s:56:"http://localhost/projetointegrador-teste/public/cadastro";errors|a:3:{s:15:"email_cadastrar";s:22:"O EMAIL É OBRIGATORIO";s:15:"senha_cadastrar";s:22:"A SENHA É OBRIGATORIO";s:18:"telefone_cadastrar";s:25:"O TELEFONE É OBRIGATORIO";}__ci_vars|a:1:{s:6:"errors";s:3:"new";}
