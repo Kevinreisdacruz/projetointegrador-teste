@@ -1,5 +1,4 @@
-<form action="<?php echo url_to('addcatalogo.validacao') ?>" method="post">
-
+<?php echo form_open_multipart('addcatalogo/validacao');?>
     <div id="container-add-produto">
         <div class="fundo-add-produto">
 
@@ -30,4 +29,4 @@
         </div>
 
     </div>
-</form>
+<?php form_close(); ?> 

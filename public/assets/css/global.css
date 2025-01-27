@@ -194,7 +194,7 @@ div i {
 /* aqui acaba o css do popup de login */
 
 
-/* aqui comeca o css do popup de cadastro */
+/* CADASTRO */
 
 .caixa-cadastro {
     background-color: white;
@@ -265,10 +265,10 @@ div i {
 }
 
 
-/* aqui acaba o css do popup de cadastro */
+/* CADASTRO */
 
 
-/* aqui comeca popup de exclusao de cadastro */
+/* EXCLUSAO DE CONTA */
 
 #container-excluir {
     display: none;
@@ -356,10 +356,10 @@ div i {
 
 }
 
-/* aqui termina popup de exclusao de cadastro */
+/* EXCLUSAO E CONTA */
 
 
-/* aqui comeca popup de alteracao de cadastro */
+/* ALTERACAO DO USUARIO */
 
 #container-alterar {
     display: none;
@@ -442,9 +442,9 @@ div i {
     }
 }
 
-/* aqui termina popup de alteracao de cadastro */
+/* ALTERACAO DE USUARIO */
 
-/* NAVBAR */
+/* CATALOGO */
 
 .card-container {
     display: flex;
@@ -452,7 +452,6 @@ div i {
     flex-wrap: wrap;
     margin-top: 2rem;
     padding: 0.5rem;
-    gap: 2rem;
 
 }
 
@@ -483,6 +482,8 @@ div i {
     }
 }
 
+/* CATALOGO */
+
 .box {
     display: flex;
     justify-content: center;
@@ -499,7 +500,6 @@ div i {
     border-radius: 2rem;
 }
 
-/* INDEX  */
 
 /* CARDAPIO PRODUTO  */
 .card-produtos {
@@ -510,6 +510,7 @@ div i {
     overflow: hidden;
     box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.2);
     transition: all ease-in-out 0.5s;
+    margin: 2rem;
 }
 
 .card-produtos:hover {
@@ -520,7 +521,6 @@ div i {
     padding: 2rem;
 
     .btn-card-pginicial {
-        display: inline-block;
         padding: 8px 16px;
         background-color: #325037;
         color: white;
