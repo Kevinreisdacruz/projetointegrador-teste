@@ -4,16 +4,19 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\UsuarioModel;
+use App\Models\ProdutoModel;
 use CodeIgniter\HTTP\ResponseInterface;
 
 class Usuario extends BaseController
 {
 
     private  $UsuarioModel;
+    private  $ProdutoModel;
 
     public function  __construct()
     {
         $this->UsuarioModel = new UsuarioModel();
+        $this->ProdutoModel= new ProdutoModel();
     }
 
     public function administracao()
@@ -28,15 +31,18 @@ class Usuario extends BaseController
     {
         $titulos['title'] = 'TABELA DE CLIENTES';
         return view('templates/navbar', $titulos) .
-            view('tableclientes') .
+            view('tableclientes', [
+                'tableclientes' => $this->UsuarioModel->findAll()
+            ]) .
             view('templates/footer');
     }
-    public function tableadmins()
+
+    public function tableprodutos()
     {
-        $titulos['title'] = "TABELA DE ADMINS";
+        $titulos['title'] = 'TABELA DE PRODUTOS';
         return view('templates/navbar', $titulos) .
-            view('tableadmins', [
-                'tableadmins' => $this->UsuarioModel->findAll()
+            view('tableprodutos', [
+                'tableprodutos' => $this->ProdutoModel->findAll()
             ]) .
             view('templates/footer');
     }
@@ -73,7 +79,7 @@ class Usuario extends BaseController
         }
 
         $usuario = new UsuarioModel();
-        $usuario_encontrado = $usuario->select('IdUsuario, nome, email, senha, telefone')->where('email', $this->request->getPost('email'))->first();
+        $usuario_encontrado = $usuario->select('IdUsuario, Nome, Email, Senha, Telefone')->where('Email', $this->request->getPost('email'))->first();
 
         
         
@@ -146,10 +152,10 @@ class Usuario extends BaseController
         }
         
        $dados =[
-        'nome' =>$this->request->getPost('nome_cadastrar'),
-        'email' => $this->request->getPost('email_cadastrar'),
-        'senha' =>password_hash($this->request->getPost('senha_cadastrar'), PASSWORD_DEFAULT),
-        'telefone'=> $this->request->getPost('telefone_cadastrar')
+        'Nome' =>$this->request->getPost('nome_cadastrar'),
+        'Email' => $this->request->getPost('email_cadastrar'),
+        'Senha' =>password_hash($this->request->getPost('senha_cadastrar'), PASSWORD_DEFAULT),
+        'Telefone'=> $this->request->getPost('telefone_cadastrar')
        ];
 
 

@@ -450,6 +450,7 @@ div i {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 1rem;
     margin-top: 2rem;
     padding: 0.5rem;
 

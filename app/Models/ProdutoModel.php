@@ -6,17 +6,18 @@ use CodeIgniter\Model;
 
 class ProdutoModel extends Model
 {
-    protected $table            = 'produto';
-    protected $primaryKey       = 'IdProduto';
+    protected $table            = 'produtos';
+    protected $primaryKey       = 'IdProdutos';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'nome',
-        'descricao',
-        'preco',
-        'imagem'
+        'Nome',
+        'Descricao',
+        'Preco',
+        'Imagem',
+        'menu_id'
     ];
 
     protected bool $allowEmptyInserts = false;

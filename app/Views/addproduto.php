@@ -6,17 +6,22 @@
         </div>
 
         <div class="inf-add-produto">
-            <select name="" id="">
+            <select name="opcao" id="">
                 <?php foreach($catalogos as $catalogo):?>
-                    <option value="<?=$catalogo['IdCatalogo']?>"><?= $catalogo['nome'] ?></option>
+                    <option value="<?=$catalogo['IdCatalogos']?>"><?= $catalogo['Nome'] ?></option>
                 <?php endforeach ?>
             </select>
             <input type="text" name="nome_addproduto" placeholder="NOME DO PRODUTO">
             <span style="color: red;"><?php echo session()->getFlashdata('error')['nome_addproduto'] ?? '' ?></span>
 
             <input type="text" name="descricao_addproduto" placeholder="DESCRIÇÃO">
+            <span style="color: red;"><?php echo session()->getFlashdata('error')['descricao_addproduto'] ?? '' ?>
+
             <input type="text" name="preco_addproduto" id="fone" placeholder="PREÇO">
+            <span style="color: red;"><?php echo session()->getFlashdata('error')['preco_addproduto'] ?? '' ?>
+
             <input name="imagem_addproduto" type="file">
+            <span style="color: red;"><?php echo session()->getFlashdata('error')['imagem_addproduto'] ?? '' ?>
         </div>
 
         <div class="botoes-add-produto">

@@ -6,16 +6,16 @@ use CodeIgniter\Model;
 
 class CatalogoModel extends Model
 {
-    protected $table            = 'catalogo';
-    protected $primaryKey       = 'IdCatalogo';
+    protected $table            = 'catalogos';
+    protected $primaryKey       = 'IdCatalogos';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'nome',
-        'imagem',
-        'descricao'
+        'Nome',
+        'Imagem',
+        'Descricao'
     ];
 
     protected bool $allowEmptyInserts = false;

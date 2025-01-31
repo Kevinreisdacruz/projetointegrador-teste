@@ -21,8 +21,8 @@
             <a href="<?=base_url('tableclientes');?>">
                 <img class="icons-admin" src="assets/imagelogos/cliente.png" alt="" title="CLIENTES" width="65px">
             </a>
-            <a href="<?=base_url('tableadmins');?>">
-                <img class="icons-admin" src="assets/imagelogos/configs-admin.png" title="ADMINS" alt="" width="65px">
+            <a href="<?=base_url('tableprodutos');?>">
+                <img class="icons-admin" src="assets/imagelogos/listaProdutos.png" title="ADMINS" alt="" width="65px">
             </a>
         </div>
 

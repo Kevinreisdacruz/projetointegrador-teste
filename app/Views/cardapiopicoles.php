@@ -1,19 +1,21 @@
-
 <div class='card-container' data-aos='fade-right'>
+<?php foreach ($produtos as $produto) : ?>
 
-  <div class='card-produtos'>
-    <img src='assets/imagepicoles/picolecoco.png' alt='' style="width: auto; height: auto;">
-    <div class='card-content-produtos'>
-      <h3 style=" font-family: 'Anton SC', sans-serif;   font-weight: 400; font-style: normal;">coco</h3>
-      <p style="font-family: Arial, Helvetica, sans-serif;  font-size: 15px; line-height: 1.3;">
-      O picolé de coco é uma sobremesa gelada feita com leite de coco e pedaços de coco, oferecendo um sabor tropical e refrescante.
-      <br><br><span style="font-weight: bold;">R$:15,90</span><br>
-      </p>
-      <a href='' class='btn-card-pginicial shadow'>COMPRAR</a>
+    <div class='card-produtos'>
+      <img src="<?= base_url('assets/uploads/' . $produto['Imagem']) ?>" alt='' style="width: auto; height: auto;">
+      <div class='card-content-produtos'>
+        <h3 style=" font-family: 'Anton SC', sans-serif;   font-weight: 400; font-style: normal;"><?= $produto['Nome'] ?></h3>
+        <p style="font-family: Arial, Helvetica, sans-serif;  font-size: 15px; line-height: 1.3;">
+          <?= $produto['Descricao'] ?>
+          <br><br><span style="font-weight: bold;">R$:<?= $produto['Preco'] ?></span><br>
+        </p>
+        <a href='' class='btn-card-pginicial shadow'>COMPRAR</a>
+      </div>
     </div>
-  </div>
 
-  <div class='card-produtos'>
+  <?php endforeach ?>
+
+  <!-- <div class='card-produtos'>
     <img src='assets/imagepicoles/picolemorango.png' alt='' style="width: auto; height: auto;">
     <div class='card-content-produtos'>
       <h3 style=" font-family: 'Anton SC', sans-serif;   font-weight: 400; font-style: normal;">morango</h3>
@@ -35,6 +37,6 @@
       </p>
       <a href='' class='btn-card-pginicial shadow'>COMPRAR</a>
     </div>
-  </div>
+  </div> -->
 
-</div>
+  </div>

@@ -9,8 +9,8 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Main::index',['as' => 'home']);
 
 $routes->get('administracao' , 'Usuario::administracao');
-$routes->get('tableadmins' , 'Usuario::tableadmins');
 $routes->get('tableclientes' , 'Usuario::tableclientes');
+$routes->get('tableprodutos', 'Usuario::tableprodutos');
 $routes->get('carrinho', 'usuario::carrinho');
 $routes->get('pagamento', 'usuario::pagamento');
 $routes->get('pagamentocartao', 'usuario::pagamentocartao');
@@ -40,7 +40,6 @@ $routes->post('/addproduto/validacao', 'Produtos::validacaoProdutos', ['as' => '
 //LOGIN
 
 // $routes->get('login', 'Usuario::login');
-
 $routes->get('/login', 'Usuario::login', ['as' => 'login']);
 $routes->post('/login', 'Usuario::entrar', ['as' => 'usuario.entrar']);
 $routes->get('/login/sair', 'Usuario::sair', ['as' => 'usuario.sair']);
@@ -50,7 +49,10 @@ $routes->get('/login/sair', 'Usuario::sair', ['as' => 'usuario.sair']);
 $routes->get('addcatalogo', 'produtos::addcatalogo');
 $routes->get('atualizarcatalogo', 'produtos::atualizarcatalogo');
 $routes->get('addproduto', 'produtos::addproduto');
-$routes->get('atualizarproduto', 'produtos::atualizarproduto');
+
+$routes->get('produtos/editarproduto/(:num)', 'produtos::editarproduto/$1');
+$routes->post('produtos/alterarproduto', 'Produtos::alterarproduto');
+
 $routes->get('cardapiomassa', 'produtos::cardapiomassa');
 $routes->get('cardapiomilkshake', 'produtos::cardapiomilkshake');
 $routes->get('cardapiopicoles', 'produtos::cardapiopicole');

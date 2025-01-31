@@ -10,14 +10,14 @@ class UsuarioModel extends Model
     protected $table            = 'clienteusuario';
     protected $primaryKey       = 'IdUsuario';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'object';
+    protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'nome',
-        'email',
-        'telefone',
-        'senha'
+        'Nome',
+        'Email',
+        'Telefone',
+        'Senha'
     ];
 
     protected bool $allowEmptyInserts = false;
@@ -34,11 +34,7 @@ class UsuarioModel extends Model
     protected $deletedField  = 'deleted_at';
 
     // Validation
-    protected $validationRules      = [
-        // 'email_cadastrar'        => 'required|valid_email|is_unique[clienteusuario.email]',
-        // 'senha_cadastrar'     => 'required',
-        // 'telefone_cadastrar' => 'required',
-    ];
+    protected $validationRules      = [];
     protected $validationMessages   = [];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;
