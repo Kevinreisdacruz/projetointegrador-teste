@@ -90,7 +90,7 @@
       <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
         <ul class="navbar-nav mb-2 mb-lg-0 me-auto box-link">
           <li class="nav-item">
-            <a href="<?=base_url('login'); ?>" id="login" class="nav-link active link-navbar " aria-current="page">Login</a>
+            <a href="<?=base_url('login'); ?>" id="login" class="nav-link active link-navbar " aria-current="page">Entrar</a>
             <?php if(session()->has('usuario')) : ?>
               Olá, <?php echo session()->get('usuario')->nome ?>
             <?php endif ?>
