@@ -1,4 +1,4 @@
-
+<?php echo form_open_multipart('cadcep/validacaoCep');?>
 <div class="box">
     <div class="fundo-cep">
 
@@ -7,12 +7,23 @@
         </div>
 
         <div class="inf-cep">
-            <input type="text" placeholder="CEP">
-            <input type="text" placeholder="BAIRRO">
-            <input type="text" placeholder="RUA">
-            <input type="text" placeholder="NUMERO DA CASA">
-            <input type="text" placeholder="COMPLEMENTO">
-            <input type="text" placeholder="LOGRADOURO">
+            <input name="cidade" type="text" placeholder="CIDADE"><br>
+            <span style="color: red;"><?php echo session()->getFlashdata('error')['cidade'] ?? '' ?></span>
+
+            <input name="cep" type="text" placeholder="CEP"><br>
+            <span style="color: red;"><?php echo session()->getFlashdata('error')['cep'] ?? '' ?></span>
+
+            <input name="bairro" type="text" placeholder="BAIRRO"><br>
+            <span style="color: red;"><?php echo session()->getFlashdata('error')['bairro'] ?? '' ?></span>
+
+            <input name="rua" type="text" placeholder="RUA"><br>
+            <span style="color: red;"><?php echo session()->getFlashdata('error')['rua'] ?? '' ?></span>
+
+            <input name="numerocasa" type="text" placeholder="NUMERO DA CASA"><br>
+            <span style="color: red;"><?php echo session()->getFlashdata('error')['numerocasa'] ?? '' ?></span>
+
+            <input name="complemento" type="text" placeholder="COMPLEMENTO EX: CASA, CONDOMINIO  "><br>
+            <span style="color: red;"><?php echo session()->getFlashdata('error')['complemento'] ?? '' ?></span>
         </div>
 
         <div class="confirmar-cep">
@@ -22,3 +33,4 @@
         </div>
     </div>
 </div>
+<?php form_close(); ?> 

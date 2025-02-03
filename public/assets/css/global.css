@@ -195,50 +195,59 @@ div i {
 
 /* CADASTRO */
 
-.caixa-cadastro {
-    background-color: white;
-    width: 25.5rem;
-    margin: auto;
-    margin-top: 5rem;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 0 10px black;
+.container-cadastro
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
 
-
-    input {
-        padding: 10px;
-        border-radius: 10px;
-        outline: none;
-        font-size: 15px;
-        width: 15rem;
+    .caixa-cadastro {
+        background-color: white;
+        width: 25.5rem;
+        padding: 30px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 0 10px black;
+    
+    
+        input {
+            padding: 10px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+            width: 15rem;
+        }
+    
+        button {
+            width: 100%;
+            height: 3rem;
+            border: none;
+            border-radius: 10px;
+            background-color: #A8D2A0;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all .3s;
+        }
+    
+        button:active {
+            transform: scale(.8);
+        }
+    
+        h6 {
+            padding: 10px;
+            cursor: pointer;
+        }
+    
+        h6:hover {
+            text-decoration: underline;
+        }
     }
 
-    button {
-        width: 100%;
-        height: 3rem;
-        border: none;
-        border-radius: 10px;
-        background-color: #A8D2A0;
-        color: white;
-        font-size: 15px;
-        cursor: pointer;
-        transition: all .3s;
-    }
-
-    button:active {
-        transform: scale(.8);
-    }
-
-    h6 {
-        padding: 10px;
-        cursor: pointer;
-    }
-
-    h6:hover {
-        text-decoration: underline;
-    }
 }
+
 
 @keyframes animacao-popup {
     from {
@@ -451,8 +460,7 @@ div i {
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 2rem;
-    padding: 0.5rem;
-
+    padding: 1.5rem;
 }
 
 .card-pginicial {
@@ -857,7 +865,6 @@ div i {
 /* CADASTRO DE CEP  */
 .fundo-cep {
     width: 25rem;
-    height: 33rem;
     background-color: white;
     border-radius: 20px;
     padding: 1rem;

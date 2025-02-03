@@ -1,5 +1,5 @@
 <form action="<?php echo url_to('usuario.validacao') ?>" method="post">
-    <div id='container-cadastro'>
+    <div class='container-cadastro'>
         <div class='caixa-cadastro'>
             <h1 style="font-weight: bold;">Cadastro</h1>
 
@@ -21,7 +21,7 @@
             <i class='bi bi-eye-fill' id='btn-senha' onclick='mostrarsenha()'></i>
             <br>
 
-            <input id="fone" name="telefone_cadastrar" type="" placeholder='telefone' value="<?php echo old('telefone_cadastrar') ?>"><br>
+            <input id="fone-cadastro" name="telefone_cadastrar" type="" placeholder='Telefone' value="<?php echo old('telefone_cadastrar') ?>"><br>
             <span style="color: red;"><?php echo session()->getFlashdata('errors')['telefone_cadastrar'] ?? '' ?></span>
             <br>
 
@@ -29,7 +29,7 @@
 
             <br>
 
-            <a href="#" style="color: black">
+            <a href="index.php" style="color: black">
                 <h6 style="font-weight: bold;">Não desejo criar agora </h6>
             </a>
         </div>

@@ -13,9 +13,8 @@ $routes->get('tableclientes' , 'Usuario::tableclientes');
 
 $routes->get('carrinho', 'usuario::carrinho');
 $routes->get('pagamento', 'usuario::pagamento');
-$routes->get('pagamentocartao', 'usuario::pagamentocartao');
 $routes->get('agradecimento', 'usuario::agradecimento');
-$routes->get('cadcep', 'usuario::cep');
+
 
 
 
@@ -73,3 +72,17 @@ $routes->get('cardapiomassa', 'produtos::cardapiomassa');
 $routes->get('cardapiomilkshake', 'produtos::cardapiomilkshake');
 $routes->get('cardapiopicoles', 'produtos::cardapiopicole');
 //PRODUTOS
+
+
+//CEP
+$routes->get('cadcep', 'usuario::cep');
+$routes->post('cadcep/validacaoCep/', 'Usuario::validacaoCep',['as' =>'cadcep.validacaoCep']);
+//CEP
+
+
+//PAGAMENTO CARTAO
+
+$routes->get('pagamentocartao', 'usuario::pagamentocartao');
+$routes->post('pagamento/validacaoCartao/', 'Usuario::validacaoCartao',['as' =>'pagamento.validacaoCartao']);
+
+//PAGAMENTO CARTAO

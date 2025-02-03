@@ -1,9 +1,9 @@
 AOS.init()
 
-var caixaexcluir = document.getElementById('container-excluir');
-var exclusao = document.getElementById('exclusao');
+let caixaexcluir = document.getElementById('container-excluir');
+let exclusao = document.getElementById('exclusao');
 exclusao.addEventListener("click", excluir)
-$('#fone').mask('(00) 00000-0000');
+
 
 function excluir() {
   caixaexcluir.style.display = "flex";
@@ -11,8 +11,8 @@ function excluir() {
 
 };
 
-var caixaalterar = document.getElementById('container-alterar');
-var alteracao = document.getElementById('alteracao');
+let caixaalterar = document.getElementById('container-alterar');
+let alteracao = document.getElementById('alteracao');
 alteracao.addEventListener("click", alterar)
 
 function alterar() {
@@ -20,15 +20,8 @@ function alterar() {
 
 };
 
-var caixaconfirmaracao = document.getElementById('container-confirmar-exclusao-admin');
-var confirmaracao = document.getElementById('confirmaracao');
-confirmaracao.addEventListener("click", acao)
-
-function acao() {
-  caixaconfirmaracao.style.display = "flex";
-};
-
-
+$('#fone').mask('(00) 00000-0000');
+$('#fone-cadastro').mask('(00) 00000-0000');
 $('#data').mask('00/00');
 $('#cod-seguranca').mask('000');
 $('#num-card').mask('0000 0000 0000 0000');

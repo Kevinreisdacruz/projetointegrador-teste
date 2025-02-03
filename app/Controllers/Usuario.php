@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\EnderecoCliente;
 use App\Models\UsuarioModel;
 use App\Models\ProdutoModel;
 use CodeIgniter\HTTP\ResponseInterface;
@@ -12,11 +13,13 @@ class Usuario extends BaseController
 
     private  $UsuarioModel;
     private  $ProdutoModel;
+    private  $EndercoCliFinal;
 
     public function  __construct()
     {
         $this->UsuarioModel = new UsuarioModel();
-        $this->ProdutoModel= new ProdutoModel();
+        $this->ProdutoModel = new ProdutoModel();
+        $this->EndercoCliFinal = new EnderecoCliente();
     }
 
     public function administracao()
@@ -206,19 +209,6 @@ class Usuario extends BaseController
     //TABELA
 
 
-   
-
-    
-
-  
-    
-
- 
-
-
-    
-
-
     public function carrinho()
     {
         $titulos['title'] = 'CARRINHO';
@@ -235,6 +225,62 @@ class Usuario extends BaseController
             view('templates/footer');
     }
 
+    public function validacaoCep()
+    {
+        if(! $this->validate([ 
+            'cidade' => 'required', 
+            'cep' => 'required',
+            'bairro' => 'required',
+            'rua' => 'required',
+            'numerocasa' => 'required',
+        ],[
+            'cidade' =>[
+                'required' => 'A cidade é obrigatorio',
+            ],
+
+            'cep' => [
+                'required' => 'O cep é obrigatorio',
+            ],
+            'bairro' => [
+                'required' => 'O bairro é obrigatorio',
+            ],
+            'rua' => [
+                'required' => 'A rua é obrigatoria',
+            ],
+            'numerocasa' => [
+                'required' => 'O numero da casa é obrigatorio',
+            ],
+            
+
+         
+        ])){
+        
+            return redirect()->route('cadcep')->withInput()->with('error', $this->validator->getErrors());
+        }
+
+        $dados =[
+            'Cidade' =>$this->request->getPost('cidade'),
+            'Cep' =>$this->request->getPost('cep'),
+            'Bairro' => $this->request->getPost('bairro'),
+            'Rua' =>$this->request->getPost('rua'),
+            'Numero' =>$this->request->getPost('numerocasa'),
+            'Complemento' =>$this->request->getPost('complemento'),
+           ];
+    
+           $user = new EnderecoCliente();
+           $inserindo = $user->insert($dados);
+    
+           if($inserindo){
+            return redirect()->to('pagamento');
+           }else{
+            return redirect()->to('cadastro');
+           }
+    }
+
+
+
+
+
 
     public function pagamento()
     {
@@ -250,6 +296,34 @@ class Usuario extends BaseController
         return view('templates/navbar', $titulos) .
             view('pagamentocartao') .
             view('templates/footer');
+    }
+
+
+    public function validacaoCartao()
+    {
+        if(! $this->validate([ 
+            'nometitular' => 'required', 
+            'numerocartao' => 'required',
+            'validade' => 'required',
+            'codseguranca' => 'required',
+        ],[
+            'nometitular' =>[
+                'required' => 'O nome do titular é obrigatorio',
+            ],
+
+            'numerocartao' => [
+                'required' => 'O número do cartão é obrigatorio',
+            ],
+            'validade' => [
+                'required' => 'A data de vencimento do cartão é obrigatorio',
+            ],
+            'codseguranca' => [
+                'required' => 'O codigo de validaco é obrigatorio',
+            ],
+        ])){
+        
+            return redirect()->route('pagamentocartao')->withInput()->with('error', $this->validator->getErrors());
+        }
     }
 
     public function agradecimento()
