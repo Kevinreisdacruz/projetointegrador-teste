@@ -31,7 +31,7 @@ class Produtos extends BaseController
     {
         $titulos['title'] = 'TABELA DE CATÁLOGOS';
         return view('templates/navbar', $titulos) .
-            view('tablecatalogos', ['catalogos' =>$this->catalogomodel->findAll()]) .
+            view('tablecatalogos', ['catalogos' => $this->catalogomodel->findAll()]) .
             view('templates/footer');
     }
 
@@ -47,23 +47,21 @@ class Produtos extends BaseController
     {
         $pesquisa = $this->request->getGet('buscar');
 
-        if($this->request->getGet('opcao') == 1)
-        {
+        if ($this->request->getGet('opcao') == 1) {
             $dados = $this->catalogomodel->like('IdCatalogos', $pesquisa)->findAll();
-        }else
-        {
+        } else {
             $dados = $this->catalogomodel->like('Nome', $pesquisa)->findAll();
         }
 
         $titulos['title'] = 'TABELA DE CATÁLOGOS';
-        return view('templates/navbar', $titulos).
-        view('tablecatalogos',['catalogos' =>$dados]).
-        view('templates/footer');
+        return view('templates/navbar', $titulos) .
+            view('tablecatalogos', ['catalogos' => $dados]) .
+            view('templates/footer');
     }
 
     public function excluircatalogo($IdCatalogos)
     {
-        if($this->catalogomodel->delete($IdCatalogos)){
+        if ($this->catalogomodel->delete($IdCatalogos)) {
             return redirect()->route('tablecatalogos');
         }
     }
@@ -72,7 +70,7 @@ class Produtos extends BaseController
     {
         $titulos['title'] = 'ATUALIZAR CATÁLOGO';
         return view('templates/navbar', $titulos) .
-            view('atualizarcatalogo',['catalogo' => $this->catalogomodel->find($IdCatalogos)]) .
+            view('atualizarcatalogo', ['catalogo' => $this->catalogomodel->find($IdCatalogos)]) .
             view('templates/footer');
     }
 
@@ -126,15 +124,15 @@ class Produtos extends BaseController
 
                 $dados['Imagem'] = $nomeRand;
 
-                
+
                 if ($this->catalogomodel->update($dados['IdCatalogos'], $dados)) {
                     return redirect()->route('tablecatalogos');
                 }
             }
-        }else{
-        
+        } else {
+
             $dados = $this->request->getPost();
-            
+
             $dados = [
                 'IdCatalogos' => $this->request->getPost('IdCatalogos'),
                 'Nome' => $this->request->getPost('atualizar_nomecatalogo'),
@@ -152,55 +150,61 @@ class Produtos extends BaseController
     {
 
         $img = $this->request->getFile('imagem_catalogo');
-
-        if(! $this->validate([  
-            'nome_catalogo' => 'required',
-            'descricao_catalogo' => 'required|min_length[200]|max_length[265]',
-            'imagem_catalogo' => 'uploaded[imagem_catalogo]|is_image[imagem_catalogo]|ext_in[imagem_catalogo,jpg,jpeg,png]|',
-        ],[
-
-            'nome_catalogo' => [
-                'required' => 'O nome do catálogo é obrigatorio',
-            ],
-            'descricao_catalogo' => [
-                'required' => 'A descrição do catálogo é obrigatorio',
-                'min_length' => 'O minimo de caracteres deve ser 200',
-                'max_length' => 'O maximo de caracteres deve ser 265',
-            ],
-            'imagem_catalogo' => [
-                'uploaded' => 'A imagem é obrigatoria',
-                'ext_in' => 'A extensão ' . $img->getExtension() . '  é inválida!',
-                'max_dims' => 'A altura e largura maxima do arquivo deve ser 800x500',
-            ],
-
-         
-        ])){
         
-            return redirect()->route('addcatalogo')->withInput()->with('error', $this->validator->getErrors());
-        }
+       
+
+            if (! $this->validate([
+                'nome_catalogo' => 'required',
+                'descricao_catalogo' => 'required|min_length[200]|max_length[265]',
+                'imagem_catalogo' => 'uploaded[imagem_catalogo]|is_image[imagem_catalogo]|ext_in[imagem_catalogo,jpg,jpeg,png]|',
+            ], [
+
+                'nome_catalogo' => [
+                    'required' => 'O nome do catálogo é obrigatorio',
+                ],
+                'descricao_catalogo' => [
+                    'required' => 'A descrição do catálogo é obrigatorio',
+                    'min_length' => 'O minimo de caracteres deve ser 200',
+                    'max_length' => 'O maximo de caracteres deve ser 265',
+                ],
+                'imagem_catalogo' => [
+                    'uploaded' => 'A imagem é obrigatoria',
+                    'ext_in' => 'A extensão ' . $img->getExtension() . '  é inválida!',
+                    'max_dims' => 'A altura e largura maxima do arquivo deve ser 800x500',
+                ],
+
+
+            ])) {
+
+                return redirect()->route('addcatalogo')->withInput()->with('error', $this->validator->getErrors());
+            }
+
+            
         
+
+
+
         if (! $img->hasMoved()) {
-            
+
             $nomeRand = $img->getRandomName();
-            
+
             $img->store('../../public/assets/uploads/', $nomeRand);
             session()->setFlashdata('sucesso', "Upload realizado com sucesso!");
-            
+
             $dados = [
                 'Nome' => $this->request->getPost('nome_catalogo'),
                 'Descricao' => $this->request->getPost('descricao_catalogo'),
                 'Imagem' => $this->request->getPost('imagem_catalogo'),
             ];
-            
+
             $dados['Imagem'] = $nomeRand;
-            
-            
+
+
             if ($this->catalogomodel->save($dados)) {
                 session()->setFlashdata('cadastroOK', "Cadastro Realizado com sucesso");
                 return redirect()->route('administracao');
             }
         }
-
     }
 
     //CATALOGO
@@ -237,23 +241,21 @@ class Produtos extends BaseController
     {
         $pesquisa = $this->request->getGet('buscar');
 
-        if($this->request->getGet('opcao') == 1)
-        {
+        if ($this->request->getGet('opcao') == 1) {
             $dados = $this->produtomodel->like('IdProdutos', $pesquisa)->findAll();
-        }else
-        {
+        } else {
             $dados = $this->produtomodel->like('Nome', $pesquisa)->findAll();
         }
 
         $titulos['title'] = 'TABELA DE PRODUTOS';
-        return view('templates/navbar', $titulos).
-        view('tableprodutos',['tableprodutos' =>$dados]).
-        view('templates/footer');
+        return view('templates/navbar', $titulos) .
+            view('tableprodutos', ['tableprodutos' => $dados]) .
+            view('templates/footer');
     }
 
     public function excluirProduto($IdProdutos)
     {
-        if($this->produtomodel->delete($IdProdutos)){
+        if ($this->produtomodel->delete($IdProdutos)) {
             return redirect()->route('tableprodutos');
         }
     }
@@ -317,7 +319,7 @@ class Produtos extends BaseController
                 ];
 
                 $dados['Imagem'] = $nomeRand;
-              
+
 
                 if ($this->produtomodel->update($dados['IdProdutos'], $dados)) {
 
@@ -348,12 +350,12 @@ class Produtos extends BaseController
 
         $img = $this->request->getFile('imagem_addproduto');
 
-        if(!  $this->validate([
+        if (! $this->validate([
             'nome_addproduto' => 'required',
             'descricao_addproduto' => 'required|min_length[100]|max_length[130]',
             'preco_addproduto' => 'required',
             'imagem_addproduto' => 'uploaded[imagem_addproduto]|is_image[imagem_addproduto]|ext_in[imagem_addproduto,jpg,jpeg,png]'
-        ],[
+        ], [
             'nome_addproduto' => [
                 'required' => 'O nome do produto é obrigatorio',
             ],
@@ -362,7 +364,7 @@ class Produtos extends BaseController
                 'min_length' => 'O minimo de caracteres deve ser 100',
                 'max_length' => 'O maximo de caracteres deve ser 130',
             ],
-            'preco_addproduto' =>[
+            'preco_addproduto' => [
                 'required' => 'O preço é obrigatorio'
             ],
             'imagem_addproduto' => [
@@ -371,7 +373,7 @@ class Produtos extends BaseController
                 'max_dims' => 'A altura e largura maxima do arquivo deve ser 700 x 210',
             ],
 
-        ])){
+        ])) {
             return redirect()->route('addproduto')->withInput()->with('error', $this->validator->getErrors());
         }
 
@@ -400,7 +402,7 @@ class Produtos extends BaseController
     }
 
     //PRODUTOS
-    
+
     //CARDAPIO
     public function cardapiomassa()
     {
@@ -435,5 +437,5 @@ class Produtos extends BaseController
     }
 
     //CARDAPIO
-    
+
 }

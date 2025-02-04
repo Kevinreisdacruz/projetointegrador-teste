@@ -30,8 +30,8 @@
             <a href="<?= base_url('/'); ?>">
                 <button class="btn-add-produto">ADICIONAR PRODUTO</button><br>
             </a>
-            <a href="<?= base_url('administracao'); ?>">
-                <button class="btn-add-produto">CANCELAR</button>
+            <a class="a-link" href="<?= base_url('administracao'); ?>">
+                CANCELAR
             </a>
         </div>
     </div>

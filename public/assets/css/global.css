@@ -1046,6 +1046,7 @@ div i {
         padding: 0.3rem;
         background-color: white;
         border-radius: 15px;
+        padding: 1rem;
 
 
         .titulo-add-produto {
@@ -1096,6 +1097,22 @@ div i {
             .btn-add-produto:hover {
                 scale: 1.1;
             }
+
+           .a-link{
+            width: 7rem;
+            height: 4rem;
+            text-decoration: none;
+            background-color: #A8D2A0;
+            color: white;
+            border: solid 1px;
+            border-radius: 5px;
+            transition: all ease-in-out 0.7s;
+            padding: 0.2rem;
+           }
+
+           .a-link:hover {
+            scale: 1.1;
+        }
         }
 
     }

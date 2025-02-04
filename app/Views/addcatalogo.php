@@ -17,16 +17,16 @@
                 <span style="color: red;"><?php echo session()->getFlashdata('error')['imagem_catalogo'] ?? '' ?></span>
 
             </div>
-
-
+            
+            
             <div class="botoes-add-produto">
-                <button type="submit" name="cadastrar_catalogo" class="btn-add-produto">ADICIONAR </button><br>
-                <a href="<?= base_url('administracao'); ?>">
-                    <button class="btn-add-produto">CANCELAR</button>
+                <button type="submit" name="cadastrar_catalogo" class="btn-add-produto">ADICIONAR</button><br><br>
+                <a class="a-link" href="<?= base_url('administracao'); ?>">
+                    CANCELAR
                 </a>
             </div>
-
+            
         </div>
-
+        
     </div>
-<?php form_close(); ?> 
+    <?php echo form_close(); ?> 
