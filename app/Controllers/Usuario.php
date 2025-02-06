@@ -135,8 +135,12 @@ class Usuario extends BaseController
 
         unset($usuario_encontrado->senha);
         session()->set('usuario', $usuario_encontrado);
+
+        var_dump($usuario_encontrado);
+        die();
         
         return redirect()->route('home');
+
         
     }
 

@@ -62,6 +62,7 @@ $routes->get('addproduto', 'produtos::addproduto');
 $routes->get('produtos/editarproduto/(:num)', 'produtos::editarproduto/$1');
 $routes->post('produtos/alterarproduto', 'Produtos::alterarproduto');
 $routes->get('produtos/excluirProduto/(:num)', 'Produtos::excluirProduto/$1');
+$routes->get('produtos/adicionarAoCarrinho', 'Produtos::adicionarAoCarrinho');
 
 $routes->get('produto/buscarProduto', 'Produto::buscarProduto');
 $routes->get('pesquisa', 'Produtos::buscarProduto');

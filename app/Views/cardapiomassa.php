@@ -9,7 +9,12 @@
             <?= $produto['Descricao'] ?>
             <br><br><span style="font-weight: bold;">R$:<?= $produto['Preco'] ?></span><br>
           </p>
-          <a href="" class='btn-card-pginicial shadow'>COMPRAR</a>
+          <?=form_open('produtos/adicionarAoCarrinho', 'method=get') ?>
+          <input type="hidden" name="idProduto" value="<?=$produto['IdProdutos']?>">
+          <input type="hidden" name="nomeProduto" value="<?=$produto['Nome']?>">
+          <input type="hidden" name="valorProduto" value="<?=$produto['Preco']?>">
+          <button type='submit' class='btn-card-pginicial shadow'>COMPRAR</a>
+          <?= form_close(); ?>
         </div>
       </div>
 

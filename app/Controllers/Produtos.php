@@ -150,37 +150,37 @@ class Produtos extends BaseController
     {
 
         $img = $this->request->getFile('imagem_catalogo');
-        
-       
-
-            if (! $this->validate([
-                'nome_catalogo' => 'required',
-                'descricao_catalogo' => 'required|min_length[200]|max_length[265]',
-                'imagem_catalogo' => 'uploaded[imagem_catalogo]|is_image[imagem_catalogo]|ext_in[imagem_catalogo,jpg,jpeg,png]|',
-            ], [
-
-                'nome_catalogo' => [
-                    'required' => 'O nome do catálogo é obrigatorio',
-                ],
-                'descricao_catalogo' => [
-                    'required' => 'A descrição do catálogo é obrigatorio',
-                    'min_length' => 'O minimo de caracteres deve ser 200',
-                    'max_length' => 'O maximo de caracteres deve ser 265',
-                ],
-                'imagem_catalogo' => [
-                    'uploaded' => 'A imagem é obrigatoria',
-                    'ext_in' => 'A extensão ' . $img->getExtension() . '  é inválida!',
-                    'max_dims' => 'A altura e largura maxima do arquivo deve ser 800x500',
-                ],
 
 
-            ])) {
 
-                return redirect()->route('addcatalogo')->withInput()->with('error', $this->validator->getErrors());
-            }
+        if (! $this->validate([
+            'nome_catalogo' => 'required',
+            'descricao_catalogo' => 'required|min_length[200]|max_length[265]',
+            'imagem_catalogo' => 'uploaded[imagem_catalogo]|is_image[imagem_catalogo]|ext_in[imagem_catalogo,jpg,jpeg,png]|',
+        ], [
 
-            
-        
+            'nome_catalogo' => [
+                'required' => 'O nome do catálogo é obrigatorio',
+            ],
+            'descricao_catalogo' => [
+                'required' => 'A descrição do catálogo é obrigatorio',
+                'min_length' => 'O minimo de caracteres deve ser 200',
+                'max_length' => 'O maximo de caracteres deve ser 265',
+            ],
+            'imagem_catalogo' => [
+                'uploaded' => 'A imagem é obrigatoria',
+                'ext_in' => 'A extensão ' . $img->getExtension() . '  é inválida!',
+                'max_dims' => 'A altura e largura maxima do arquivo deve ser 800x500',
+            ],
+
+
+        ])) {
+
+            return redirect()->route('addcatalogo')->withInput()->with('error', $this->validator->getErrors());
+        }
+
+
+
 
 
 
@@ -438,4 +438,12 @@ class Produtos extends BaseController
 
     //CARDAPIO
 
+    public function adicionarAoCarrinho()
+    {
+        $produto = new ProdutoModel();
+        $idProduto = $this->request->getGet('idProduto');
+
+        $produto->insert('pedido', );
+        
+    }
 }

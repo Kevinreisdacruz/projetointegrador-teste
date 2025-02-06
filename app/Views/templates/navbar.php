@@ -92,7 +92,7 @@
           <li class="nav-item">
             <a href="<?=base_url('login'); ?>" id="login" class="nav-link active link-navbar " aria-current="page">Entrar</a>
             <?php if(session()->has('usuario')) : ?>
-              Olá, <?php echo session()->get('usuario')->nome ?>
+           
             <?php endif ?>
           </li>
           <li class="nav-item">
