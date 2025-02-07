@@ -438,12 +438,12 @@ class Produtos extends BaseController
 
     //CARDAPIO
 
-    public function adicionarAoCarrinho()
-    {
-        $produto = new ProdutoModel();
-        $idProduto = $this->request->getGet('idProduto');
+    // public function adicionarAoCarrinho()
+    // {
+    //     $produto = new ProdutoModel();
+    //     $idProduto = $this->request->getGet('idProduto');
 
-        $produto->insert('pedido', );
+    //     $produto->insert('pedido', );
         
-    }
+    // }
 }

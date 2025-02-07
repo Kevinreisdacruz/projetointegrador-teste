@@ -16,8 +16,6 @@ $routes->get('pagamento', 'usuario::pagamento');
 $routes->get('agradecimento', 'usuario::agradecimento');
 
 
-
-
 //CADASTRO USUARIO
 $routes->get('cadastro', 'usuario::cadastro');
 $routes->get('/Usuario/cadastro', 'usuario::cadastro', ['as' => 'usuario.cadastro']);
@@ -87,3 +85,5 @@ $routes->get('pagamentocartao', 'usuario::pagamentocartao');
 $routes->post('pagamento/validacaoCartao/', 'Usuario::validacaoCartao',['as' =>'pagamento.validacaoCartao']);
 
 //PAGAMENTO CARTAO
+
+service('auth')->routes($routes);
