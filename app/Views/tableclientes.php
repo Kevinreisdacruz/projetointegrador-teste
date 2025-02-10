@@ -20,27 +20,29 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>NOME</th>
-                    <th>EMAIL</th>
-                    <th>TELEFONE</th>
-                    <th>AÇÕES</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">grupo</th>
+                    <th scope="col">Funções</th>
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($tableclientes as $cliente) : ?>
+                <?php foreach ($tableclientes as $clientes) : ?>
                     <tr>
-                        <td><?= $cliente['IdUsuario'] ?></td>
-                        <td><?= $cliente['Nome'] ?></td>
-                        <td><?= $cliente['Email'] ?></td>
-                        <td><?= $cliente['Telefone'] ?></td>
+                        <td scope="row"><?= $clientes->id ?></td>
+                        <td><?= $clientes->username ?></td>
+                        <td><?= implode(',', $clientes->getGroups()) ?></td>
                         <td>
-                            <a href="<?= site_url('usuario/editarUsuario/' . $cliente['IdUsuario']); ?>">ALTERAR</a>
-                            
-                            <a style="background-color: red;" href="<?= site_url('usuario/excluirUsuario/' . $cliente['IdUsuario']); ?>">EXCLUIR</a><br><br>
+                            <?php if (str_contains(implode(',', $clientes->getGroups()), 'administrador')) : ?>
+                                <a href="<?= site_url('usuarios/removeAdmin/' . $clientes->id) ?>" class="btn btn-warning me-3">remove admin</a>
+                            <?php else : ?>
+                                <a href="<?= site_url('usuarios/defineAdmin/' . $clientes->id) ?>" class="btn btn-info me-3">define admin</a>
+                            <?php endif ?>
+                            <a href="<?= site_url('usuarios/excluirusuarios/' . $clientes->id) ?>" class="btn btn-danger">Remover</a>
                         </td>
                     </tr>
-                <?php endforeach;  ?>
+                <?php endforeach; ?>
+              
             </tbody>
         </table>
     </div>

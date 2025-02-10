@@ -1,19 +1,21 @@
 
+<?php foreach($produtos as $produto) : ?>
 <div class="box-carrinho">
   <div class="interior-carrinho shadow">
     <div class="produtos-carrinho">
       <div class="image-produto">
-        <img src="assets/imagemassa/massamenta-carrinho.png" alt="">
-        <h6 style="font-weight: bold; padding-left: 1rem;">SORVETE  MASSA DE MENTA</h6> 
+        <img src="<?= base_url('assets/uploads/' . $produto['Imagem']) ?>" alt="">
+        <h6 style="font-weight: bold; padding-left: 1rem;"><?= $produto['Nome'] ?></h6> 
       </div><br>
       <div class="add-dimin">
         <button>-</button>
         <h6 style="font-size: 1.5rem;">0</h6>
         <button>+</button>
       </div>
+      <?php endforeach ?>
       
 
-      <div class="image-produto">
+      <!-- <div class="image-produto">
         <img src="assets/imagemilkshake/milkpistache-carrinho.png" alt="">
         <h6 style="font-weight: bold; padding-left: 1rem;">MILKSHAKE DE PISTACHE</h6> 
       
@@ -33,7 +35,7 @@
         <button>-</button>
         <h6 style="font-size: 1.5rem;">0</h6>
         <button>+</button>
-      </div>
+      </div> -->
       
 
       

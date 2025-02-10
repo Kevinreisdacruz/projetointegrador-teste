@@ -9,17 +9,17 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Main::index',['as' => 'home']);
 
 $routes->get('administracao' , 'Usuario::administracao');
-$routes->get('tableclientes' , 'Usuario::tableclientes');
 
-$routes->get('carrinho', 'usuario::carrinho');
+
+
 $routes->get('pagamento', 'usuario::pagamento');
 $routes->get('agradecimento', 'usuario::agradecimento');
 
 
 //CADASTRO USUARIO
-$routes->get('cadastro', 'usuario::cadastro');
-$routes->get('/Usuario/cadastro', 'usuario::cadastro', ['as' => 'usuario.cadastro']);
-$routes->post('/Usuario/validacao', 'usuario::validacao', ['as' => 'usuario.validacao']);
+// $routes->get('cadastro', 'usuario::cadastro');
+// $routes->get('/Usuario/cadastro', 'usuario::cadastro', ['as' => 'usuario.cadastro']);
+// $routes->post('/Usuario/validacao', 'usuario::validacao', ['as' => 'usuario.validacao']);
 //CADASTRO USUARIO
 
 
@@ -27,7 +27,7 @@ $routes->post('/Usuario/validacao', 'usuario::validacao', ['as' => 'usuario.vali
 
 $routes->get('usuario/editarUsuario/(:num)', 'Usuario::editarUsuario/$1');
 $routes->post('usuario/alterarCliente', 'Usuario::alterarCliente');
-$routes->get('usuario/excluirUsuario/(:num)', 'Usuario::excluirUsuario/$1');
+$routes->get('usuarios/excluirusuarios/(:num)', 'Usuario::excluirUsuarios/$1');
 $routes->get('usuario', 'Usuario::buscarCliente');
 //TABLE USUARIO
 
@@ -37,8 +37,8 @@ $routes->post('/addproduto/validacao', 'Produtos::validacaoProdutos', ['as' => '
 
 
 //LOGIN
-$routes->get('/login', 'Usuario::login', ['as' => 'login']);
-$routes->post('/login', 'Usuario::entrar', ['as' => 'usuario.entrar']);
+
+// $routes->post('/login', 'Usuario::entrar', ['as' => 'usuario.entrar']);
 $routes->get('/login/sair', 'Usuario::sair', ['as' => 'usuario.sair']);
 //LOGIN
 
@@ -60,7 +60,10 @@ $routes->get('addproduto', 'produtos::addproduto');
 $routes->get('produtos/editarproduto/(:num)', 'produtos::editarproduto/$1');
 $routes->post('produtos/alterarproduto', 'Produtos::alterarproduto');
 $routes->get('produtos/excluirProduto/(:num)', 'Produtos::excluirProduto/$1');
-$routes->get('produtos/adicionarAoCarrinho', 'Produtos::adicionarAoCarrinho');
+
+$routes->post('produtos/adicionarAoCarrinho', 'Produtos::adicionarAoCarrinho');
+$routes->get('carrinho', 'Produtos::carrinho');
+
 
 $routes->get('produto/buscarProduto', 'Produto::buscarProduto');
 $routes->get('pesquisa', 'Produtos::buscarProduto');
@@ -86,4 +89,13 @@ $routes->post('pagamento/validacaoCartao/', 'Usuario::validacaoCartao',['as' =>'
 
 //PAGAMENTO CARTAO
 
+
+$routes->get('tableclientes', 'Usuario::usuarios', );
+
+$routes->get('usuarios/defineAdmin/(:num)', 'Usuario::defineAdmin/$1');
+
+$routes->get('usuarios/removeAdmin/(:num)', 'Usuario::removeAdmin/$1');
+
 service('auth')->routes($routes);
+
+// ['filter' => 'group:administrador']

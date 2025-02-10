@@ -101,6 +101,11 @@
         </ul>
 
 
+        <?php if(auth()->loggedIn()) : ?>
+              ola, <?php echo auth()->user()->username; ?>
+              <a href="<?=site_url('logout') ?>">sair</a>
+              <?php else : ?>
+              <?php endif; ?>
         <div class="dropdown">
           <a href="<?= base_url('administracao'); ?>">
             <img src="assets/imagelogos/user-icon.png" alt="" style="width: 33px; margin-right: 1rem;">

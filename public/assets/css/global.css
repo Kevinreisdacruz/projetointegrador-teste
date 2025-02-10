@@ -773,15 +773,13 @@ div i {
 }
 
 .fundo-cartao {
-    position: relative;
-    top: 5rem;
+    top: 2rem;
     background-color: white;
     width: 25rem;
     height: 35rem;
     border-radius: 20px;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-
-
+    
     h1 {
         font-size: 1.6rem;
         text-align: center;

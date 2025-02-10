@@ -32,152 +32,166 @@ class Usuario extends BaseController
 
     public function cadastro()
     {
-        
+
         $titulos['title'] = 'CADASTRO';
         return view('templates/navbar', $titulos) .
-        view('cadastro') .
-        view('templates/footer');
-
+            view('cadastro') .
+            view('templates/footer');
     }
 
-    public function validacao()
-    {
+    // public function validacao()
+    // {
 
-        $regras = [
-            'nome_cadastrar' => 'required',
-            'email_cadastrar' => 'required|valid_email|is_unique[clienteusuario.email]',
-            'senha_cadastrar' => 'required|min_length[8]|max_length[20]',
-            'telefone_cadastrar' => 'required',
-        ];
+    //     $regras = [
+    //         'nome_cadastrar' => 'required',
+    //         'email_cadastrar' => 'required|valid_email|is_unique[clienteusuario.email]',
+    //         'senha_cadastrar' => 'required|min_length[8]|max_length[20]',
+    //         'telefone_cadastrar' => 'required',
+    //     ];
 
-        $validacao = $this->validate($regras,[
-            'nome_cadastrar' =>[
-                'required' =>  'O nome é obrigatório',
-            ],
-            'email_cadastrar' =>[
-                'required' => 'O email é obrigatório',
-                'valid_email' => 'Este email não é valido',
-                'is_unique' => 'Já existe uma conta cadastrada com este email',
-            ],
-            'senha_cadastrar' =>[
-                'required' => 'A senha é obrigatória',
-                'min_length' => 'A senha deve conter no mínimo 8 caracteres',
-                'max_length' => 'A senha deve conter no máximo 20 caracteres'
-            ],
-            'telefone_cadastrar' =>[
-                'required' => 'O telefone é obrigatório',
-            ],
-        ]);
+    //     $validacao = $this->validate($regras,[
+    //         'nome_cadastrar' =>[
+    //             'required' =>  'O nome é obrigatório',
+    //         ],
+    //         'email_cadastrar' =>[
+    //             'required' => 'O email é obrigatório',
+    //             'valid_email' => 'Este email não é valido',
+    //             'is_unique' => 'Já existe uma conta cadastrada com este email',
+    //         ],
+    //         'senha_cadastrar' =>[
+    //             'required' => 'A senha é obrigatória',
+    //             'min_length' => 'A senha deve conter no mínimo 8 caracteres',
+    //             'max_length' => 'A senha deve conter no máximo 20 caracteres'
+    //         ],
+    //         'telefone_cadastrar' =>[
+    //             'required' => 'O telefone é obrigatório',
+    //         ],
+    //     ]);
 
-        if(!$validacao){
-            return redirect()->route('cadastro')->withInput()->with('errors', $this->validator->getErrors()); //se este IF der falso, ele me redirecionara para minha pagina de cadastro, o WITH passara dados de uma requisicao para a proxima requisicao, ela esta passando a variavel "ERRORS" que esta guardando todos os erros de vallidacao, logo em seguida temos um metodo que retorna uma array de erros, se algum campo nao passar nas validacoes, ele exibira as mensagens de erro, O array que contem os erros é o getErrors
-        }
-        
-       $dados =[
-        'Nome' =>$this->request->getPost('nome_cadastrar'),
-        'Email' => $this->request->getPost('email_cadastrar'),
-        'Senha' =>password_hash($this->request->getPost('senha_cadastrar'), PASSWORD_DEFAULT),
-        'Telefone'=> $this->request->getPost('telefone_cadastrar')
-       ];
+    //     if(!$validacao){
+    //         return redirect()->route('cadastro')->withInput()->with('errors', $this->validator->getErrors()); //se este IF der falso, ele me redirecionara para minha pagina de cadastro, o WITH passara dados de uma requisicao para a proxima requisicao, ela esta passando a variavel "ERRORS" que esta guardando todos os erros de vallidacao, logo em seguida temos um metodo que retorna uma array de erros, se algum campo nao passar nas validacoes, ele exibira as mensagens de erro, O array que contem os erros é o getErrors
+    //     }
 
-       $user = new UsuarioModel;
-       $inserindo = $user->insert($dados);
+    //    $dados =[
+    //     'Nome' =>$this->request->getPost('nome_cadastrar'),
+    //     'Email' => $this->request->getPost('email_cadastrar'),
+    //     'Senha' =>password_hash($this->request->getPost('senha_cadastrar'), PASSWORD_DEFAULT),
+    //     'Telefone'=> $this->request->getPost('telefone_cadastrar')
+    //    ];
 
-       if($inserindo){
-        return redirect()->to('/');
-       }else{
-        return redirect()->to('cadastro');
-       }
-    }
+    //    $user = new UsuarioModel;
+    //    $inserindo = $user->insert($dados);
 
-    public function login()
-    {
-        $titulos['title'] = 'LOGIN';
-        return view('templates/navbar', $titulos) .
-        view('login') .
-        view('templates/footer');
-    }
+    //    if($inserindo){
+    //     return redirect()->to('/');
+    //    }else{
+    //     return redirect()->to('cadastro');
+    //    }
+    // }
 
-    public function entrar()
-    {
-        $regras = [
-            'email' => 'required|valid_email|',
-            'senha' => 'required|min_length[8]|max_length[20]',
-        ];
 
-        $validacao = $this->validate($regras,[
-            'email' =>[
-                'required' => 'Preencha o seu email',
-                'valid_email' => 'este email não é valido',
-            ],
-            'senha' =>[
-                'required' => 'Preencha a sua senha',
-                'min_length' => 'Senha incorreta',
-                'max_length' => 'Senha incorreta'
-            ]
-        ]);
 
-        if(!$validacao){
-            return redirect()->route('login')->withInput()->with('errors', $this->validator->getErrors());
-        }
+    // public function entrar()
+    // {
+    //     $regras = [
+    //         'email' => 'required|valid_email|',
+    //         'senha' => 'required|min_length[8]|max_length[20]',
+    //     ];
 
-        $usuario = new UsuarioModel();
-        $usuario_encontrado = $usuario->select('IdUsuario, Nome, Email, Senha, Telefone')->where('Email', $this->request->getPost('email'))->first();
+    //     $validacao = $this->validate($regras,[
+    //         'email' =>[
+    //             'required' => 'Preencha o seu email',
+    //             'valid_email' => 'este email não é valido',
+    //         ],
+    //         'senha' =>[
+    //             'required' => 'Preencha a sua senha',
+    //             'min_length' => 'Senha incorreta',
+    //             'max_length' => 'Senha incorreta'
+    //         ]
+    //     ]);
 
-        if(!$usuario_encontrado)
-        {
-            return redirect()->route('login')->with('erro_geral', 'Email ou Senha incorreto');
-        }
+    //     if(!$validacao){
+    //         return redirect()->route('login')->withInput()->with('errors', $this->validator->getErrors());
+    //     }
 
-        // if(!password_verify($this->request->getPost('senha'), $usuario_encontrado->senha)){
-        //     return redirect()->route('login')->with('erro_geral', 'Email ou Senha incorreto');
-        // }
+    //     $usuario = new UsuarioModel();
+    //     $usuario_encontrado = $usuario->select('IdUsuario, Nome, Email, Senha, Telefone')->where('Email', $this->request->getPost('email'))->first();
 
-        unset($usuario_encontrado->senha);
-        session()->set('usuario', $usuario_encontrado);
+    //     if(!$usuario_encontrado)
+    //     {
+    //         return redirect()->route('login')->with('erro_geral', 'Email ou Senha incorreto');
+    //     }
 
-        var_dump($usuario_encontrado);
-        die();
-        
-        return redirect()->route('home');
+    //     // if(!password_verify($this->request->getPost('senha'), $usuario_encontrado->senha)){
+    //     //     return redirect()->route('login')->with('erro_geral', 'Email ou Senha incorreto');
+    //     // }
 
-        
-    }
+    //     unset($usuario_encontrado->senha);
+    //     session()->set('usuario', $usuario_encontrado);
 
-    public function sair()
-    {
-        session()->destroy();
 
-        return redirect()->route('home');
-    }
+
+    //     return redirect()->route('home');
+
+
+    // }
+
+    // public function sair()
+    // {
+    //     session()->destroy();
+
+    //     return redirect()->route('home');
+    // }
 
     //TABELA
-    
-    public function tableclientes()
+
+
+
+    public function listarTodos()
     {
-        $titulos['title'] = 'TABELA DE CLIENTES';
-        return view('templates/navbar', $titulos) .
-            view('tableclientes', [
-                'tableclientes' => $this->UsuarioModel->findAll()
-            ]) .
+        $users = auth()->getProvider();
+        return $users->findAll();
+    }
+
+    public function usuarios()
+    {
+        $data ['title'] = 'TABELA DE CLIENTES';
+        return view('templates/navbar', $data) .
+            view('tableclientes', ['tableclientes' => $this->listarTodos()]) .
             view('templates/footer');
+    }
+
+    public function defineAdmin($id)
+    {
+        $users = auth()->getProvider();
+        $user = $users->find($id);
+        $user->addGroup('administrador');
+
+        return redirect()->route('tableclientes');
+    }
+
+    public function removeAdmin($id)
+    {
+        $users = auth()->getProvider();
+        $user = $users->find($id);
+        $user->removeGroup('administrador');
+
+        return redirect()->route('tableclientes');
     }
 
     public function buscarCliente()
     {
         $pesquisa = $this->request->getGet('pesquisar');
 
-        if($this->request->getGet('opcao') == 1)
-        {
+        if ($this->request->getGet('opcao') == 1) {
             $dados = $this->UsuarioModel->like('IdUsuario', $pesquisa)->findAll();
-        }else
-        {
+        } else {
             $dados = $this->UsuarioModel->like('Nome', $pesquisa)->findAll();
         }
 
         $titulos['title'] = 'TABELA DE CLIENTES';
         return view('templates/navbar', $titulos) .
-            view('tableclientes', ['tableclientes' =>$dados]) .
+            view('tableclientes', ['tableclientes' => $dados]) .
             view('templates/footer');
     }
 
@@ -191,7 +205,7 @@ class Usuario extends BaseController
 
     public function alterarCliente()
     {
-        $dados =[
+        $dados = [
             'IdUsuario' => $this->request->getPost('IdUsuario'),
             'Nome' => $this->request->getPost('alterar_nomeusuario'),
             'Email' => $this->request->getPost('alterar_emailusuario'),
@@ -202,24 +216,17 @@ class Usuario extends BaseController
         return redirect()->route('tableclientes');
     }
 
-
-    public function excluirUsuario($IdUsuario)
+    public function excluirUsuarios($id)
     {
-        if($this->UsuarioModel->delete($IdUsuario)){
-            return redirect()->route('tableclientes');
-        }
+        $user = auth()->getProvider();
+
+        $user->delete($id, true);
+        return redirect()->route('tableclientes');
+
     }
 
     //TABELA
 
-
-    public function carrinho()
-    {
-        $titulos['title'] = 'CARRINHO';
-        return view('templates/navbar', $titulos) .
-            view('carrinho') .
-            view('templates/footer');
-    }
 
     public function cep()
     {
@@ -231,14 +238,14 @@ class Usuario extends BaseController
 
     public function validacaoCep()
     {
-        if(! $this->validate([ 
-            'cidade' => 'required', 
+        if (! $this->validate([
+            'cidade' => 'required',
             'cep' => 'required',
             'bairro' => 'required',
             'rua' => 'required',
             'numerocasa' => 'required',
-        ],[
-            'cidade' =>[
+        ], [
+            'cidade' => [
                 'required' => 'A cidade é obrigatorio',
             ],
 
@@ -254,31 +261,31 @@ class Usuario extends BaseController
             'numerocasa' => [
                 'required' => 'O numero da casa é obrigatorio',
             ],
-            
 
-         
-        ])){
-        
+
+
+        ])) {
+
             return redirect()->route('cadcep')->withInput()->with('error', $this->validator->getErrors());
         }
 
-        $dados =[
-            'Cidade' =>$this->request->getPost('cidade'),
-            'Cep' =>$this->request->getPost('cep'),
+        $dados = [
+            'Cidade' => $this->request->getPost('cidade'),
+            'Cep' => $this->request->getPost('cep'),
             'Bairro' => $this->request->getPost('bairro'),
-            'Rua' =>$this->request->getPost('rua'),
-            'Numero' =>$this->request->getPost('numerocasa'),
-            'Complemento' =>$this->request->getPost('complemento'),
-           ];
-    
-           $user = new EnderecoCliente();
-           $inserindo = $user->insert($dados);
-    
-           if($inserindo){
+            'Rua' => $this->request->getPost('rua'),
+            'Numero' => $this->request->getPost('numerocasa'),
+            'Complemento' => $this->request->getPost('complemento'),
+        ];
+
+        $user = new EnderecoCliente();
+        $inserindo = $user->insert($dados);
+
+        if ($inserindo) {
             return redirect()->to('pagamento');
-           }else{
+        } else {
             return redirect()->to('cadastro');
-           }
+        }
     }
 
 
@@ -305,13 +312,13 @@ class Usuario extends BaseController
 
     public function validacaoCartao()
     {
-        if(! $this->validate([ 
-            'nometitular' => 'required', 
+        if (! $this->validate([
+            'nometitular' => 'required',
             'numerocartao' => 'required',
             'validade' => 'required',
             'codseguranca' => 'required',
-        ],[
-            'nometitular' =>[
+        ], [
+            'nometitular' => [
                 'required' => 'O nome do titular é obrigatorio',
             ],
 
@@ -324,8 +331,8 @@ class Usuario extends BaseController
             'codseguranca' => [
                 'required' => 'O codigo de validaco é obrigatorio',
             ],
-        ])){
-        
+        ])) {
+
             return redirect()->route('pagamentocartao')->withInput()->with('error', $this->validator->getErrors());
         }
     }
