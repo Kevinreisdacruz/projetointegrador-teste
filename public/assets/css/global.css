@@ -32,9 +32,6 @@ body {
 /* NAVBAR */
 
 @media only screen and (max-width: 1280px) {
-
-
-
     h5 {
         font-size: 0.9rem;
     }
@@ -47,6 +44,17 @@ body {
     top: 0;
     z-index: 1;
     width: 100%;
+
+    .logout
+    {
+        width: 3rem;
+        padding: 0.2rem;
+        border-radius: 0.5rem;
+        margin: 1rem;
+        color: white;
+        text-decoration: none;
+        background-color: #51B061;
+    }
 
     #logo {
         transition: all ease-in-out 0.7s;
@@ -115,7 +123,7 @@ body {
     align-items: center;
     width: 100%;
     height: 100vh;
- 
+
 
 }
 
@@ -195,8 +203,7 @@ div i {
 
 /* CADASTRO */
 
-.container-cadastro
-{
+.container-cadastro {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,8 +217,8 @@ div i {
         border-radius: 12px;
         text-align: center;
         box-shadow: 0 0 10px black;
-    
-    
+
+
         input {
             padding: 10px;
             border-radius: 10px;
@@ -219,7 +226,7 @@ div i {
             font-size: 15px;
             width: 15rem;
         }
-    
+
         button {
             width: 100%;
             height: 3rem;
@@ -231,16 +238,16 @@ div i {
             cursor: pointer;
             transition: all .3s;
         }
-    
+
         button:active {
             transform: scale(.8);
         }
-    
+
         h6 {
             padding: 10px;
             cursor: pointer;
         }
-    
+
         h6:hover {
             text-decoration: underline;
         }
@@ -279,21 +286,17 @@ div i {
 /* EXCLUSAO DE CONTA */
 
 #container-excluir {
-    display: none;
-    position: fixed;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
-    z-index: 2;
-    backdrop-filter: blur(2px);
-    animation: animacao-popup 1s;
     padding: 1rem;
 
 
     .fundo-excluir {
         width: 25rem;
-        height: 27rem;
+        height: 12rem;
         background-color: white;
         border-radius: 15px;
         box-shadow: 0 0 10px black;
@@ -327,10 +330,9 @@ div i {
 
         .botoes-excluir {
 
-            .btn-excluir {
-                margin: 0.5rem;
-                width: 7rem;
-                height: 2rem;
+
+            .cancelar-excluir {
+                padding: 0.2rem;
                 text-decoration: none;
                 background-color: red;
                 color: white;
@@ -339,7 +341,7 @@ div i {
                 transition: all ease-in-out 0.7s;
             }
 
-            .btn-excluir:hover {
+            a:hover {
                 scale: 1.1;
             }
 
@@ -552,25 +554,34 @@ div i {
 .interior-carrinho {
     align-items: center;
     width: 40rem;
-    height: 55rem;
+    padding: 1rem;
     background-color: white;
     border-radius: 2rem;
     margin-bottom: 2rem;
 
     .produtos-carrinho {
-        float: left;
-        padding: 2rem;
-
-
-
-
+        display: flex;
+       
         .image-produto {
             align-items: center;
             display: flex;
             flex-direction: row;
 
-            img {
+            a{
+                text-decoration: none;
+                background-color: #51B061;
+                color: black;
+                border-radius: 0.5rem;
+                padding: 0.3rem;
+                margin: 1rem;
+            }
 
+            p{
+                margin: 1rem;
+            }
+
+            img {
+                width: 10rem;
                 border-radius: 1rem;
             }
 
@@ -779,7 +790,7 @@ div i {
     height: 35rem;
     border-radius: 20px;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-    
+
     h1 {
         font-size: 1.6rem;
         text-align: center;
@@ -1097,21 +1108,21 @@ div i {
                 scale: 1.1;
             }
 
-           .a-link{
-            width: 7rem;
-            height: 4rem;
-            text-decoration: none;
-            background-color: #A8D2A0;
-            color: white;
-            border: solid 1px;
-            border-radius: 5px;
-            transition: all ease-in-out 0.7s;
-            padding: 0.2rem;
-           }
+            .a-link {
+                width: 7rem;
+                height: 4rem;
+                text-decoration: none;
+                background-color: #A8D2A0;
+                color: white;
+                border: solid 1px;
+                border-radius: 5px;
+                transition: all ease-in-out 0.7s;
+                padding: 0.2rem;
+            }
 
-           .a-link:hover {
-            scale: 1.1;
-        }
+            .a-link:hover {
+                scale: 1.1;
+            }
         }
 
     }
@@ -1142,7 +1153,7 @@ div i {
             border-radius: 0.3rem;
         }
 
-        button{
+        button {
             background-color: #A8D2A0;
             border-radius: 0.3rem;
             border: solid 1px black;

@@ -6,6 +6,9 @@ use App\Controllers\BaseController;
 use App\Models\EnderecoCliente;
 use App\Models\UsuarioModel;
 use App\Models\ProdutoModel;
+use CodeIgniter\Controller;
+use CodeIgniter\Shield\Authentication\Authenticators\Session;
+use CodeIgniter\Shield\Models\UserModel;
 use CodeIgniter\HTTP\ResponseInterface;
 
 class Usuario extends BaseController
@@ -14,12 +17,32 @@ class Usuario extends BaseController
     private  $UsuarioModel;
     private  $ProdutoModel;
     private  $EndercoCliFinal;
+    private $UserModel;
 
     public function  __construct()
     {
         $this->UsuarioModel = new UsuarioModel();
         $this->ProdutoModel = new ProdutoModel();
         $this->EndercoCliFinal = new EnderecoCliente();
+        $this->UserModel = new UserModel();
+    }
+
+    public function excluirPerfil()
+    {
+
+
+        $titulos['title'] = 'EXCLUSÃO DE PERFIL';
+        return view('templates/navbar', $titulos) .
+            view('excluirusuario') .
+            view('templates/footer');
+    }
+
+    public function deletarPerfil($id)
+    {
+        $user = auth()->getProvider();
+
+        $user->delete($id, true);
+        return redirect()->route('tableclientes');
     }
 
     public function administracao()
@@ -39,113 +62,6 @@ class Usuario extends BaseController
             view('templates/footer');
     }
 
-    // public function validacao()
-    // {
-
-    //     $regras = [
-    //         'nome_cadastrar' => 'required',
-    //         'email_cadastrar' => 'required|valid_email|is_unique[clienteusuario.email]',
-    //         'senha_cadastrar' => 'required|min_length[8]|max_length[20]',
-    //         'telefone_cadastrar' => 'required',
-    //     ];
-
-    //     $validacao = $this->validate($regras,[
-    //         'nome_cadastrar' =>[
-    //             'required' =>  'O nome é obrigatório',
-    //         ],
-    //         'email_cadastrar' =>[
-    //             'required' => 'O email é obrigatório',
-    //             'valid_email' => 'Este email não é valido',
-    //             'is_unique' => 'Já existe uma conta cadastrada com este email',
-    //         ],
-    //         'senha_cadastrar' =>[
-    //             'required' => 'A senha é obrigatória',
-    //             'min_length' => 'A senha deve conter no mínimo 8 caracteres',
-    //             'max_length' => 'A senha deve conter no máximo 20 caracteres'
-    //         ],
-    //         'telefone_cadastrar' =>[
-    //             'required' => 'O telefone é obrigatório',
-    //         ],
-    //     ]);
-
-    //     if(!$validacao){
-    //         return redirect()->route('cadastro')->withInput()->with('errors', $this->validator->getErrors()); //se este IF der falso, ele me redirecionara para minha pagina de cadastro, o WITH passara dados de uma requisicao para a proxima requisicao, ela esta passando a variavel "ERRORS" que esta guardando todos os erros de vallidacao, logo em seguida temos um metodo que retorna uma array de erros, se algum campo nao passar nas validacoes, ele exibira as mensagens de erro, O array que contem os erros é o getErrors
-    //     }
-
-    //    $dados =[
-    //     'Nome' =>$this->request->getPost('nome_cadastrar'),
-    //     'Email' => $this->request->getPost('email_cadastrar'),
-    //     'Senha' =>password_hash($this->request->getPost('senha_cadastrar'), PASSWORD_DEFAULT),
-    //     'Telefone'=> $this->request->getPost('telefone_cadastrar')
-    //    ];
-
-    //    $user = new UsuarioModel;
-    //    $inserindo = $user->insert($dados);
-
-    //    if($inserindo){
-    //     return redirect()->to('/');
-    //    }else{
-    //     return redirect()->to('cadastro');
-    //    }
-    // }
-
-
-
-    // public function entrar()
-    // {
-    //     $regras = [
-    //         'email' => 'required|valid_email|',
-    //         'senha' => 'required|min_length[8]|max_length[20]',
-    //     ];
-
-    //     $validacao = $this->validate($regras,[
-    //         'email' =>[
-    //             'required' => 'Preencha o seu email',
-    //             'valid_email' => 'este email não é valido',
-    //         ],
-    //         'senha' =>[
-    //             'required' => 'Preencha a sua senha',
-    //             'min_length' => 'Senha incorreta',
-    //             'max_length' => 'Senha incorreta'
-    //         ]
-    //     ]);
-
-    //     if(!$validacao){
-    //         return redirect()->route('login')->withInput()->with('errors', $this->validator->getErrors());
-    //     }
-
-    //     $usuario = new UsuarioModel();
-    //     $usuario_encontrado = $usuario->select('IdUsuario, Nome, Email, Senha, Telefone')->where('Email', $this->request->getPost('email'))->first();
-
-    //     if(!$usuario_encontrado)
-    //     {
-    //         return redirect()->route('login')->with('erro_geral', 'Email ou Senha incorreto');
-    //     }
-
-    //     // if(!password_verify($this->request->getPost('senha'), $usuario_encontrado->senha)){
-    //     //     return redirect()->route('login')->with('erro_geral', 'Email ou Senha incorreto');
-    //     // }
-
-    //     unset($usuario_encontrado->senha);
-    //     session()->set('usuario', $usuario_encontrado);
-
-
-
-    //     return redirect()->route('home');
-
-
-    // }
-
-    // public function sair()
-    // {
-    //     session()->destroy();
-
-    //     return redirect()->route('home');
-    // }
-
-    //TABELA
-
-
 
     public function listarTodos()
     {
@@ -155,7 +71,7 @@ class Usuario extends BaseController
 
     public function usuarios()
     {
-        $data ['title'] = 'TABELA DE CLIENTES';
+        $data['title'] = 'TABELA DE CLIENTES';
         return view('templates/navbar', $data) .
             view('tableclientes', ['tableclientes' => $this->listarTodos()]) .
             view('templates/footer');
@@ -181,12 +97,15 @@ class Usuario extends BaseController
 
     public function buscarCliente()
     {
+        
+        $usuario = new UserModel();
+        
         $pesquisa = $this->request->getGet('pesquisar');
 
         if ($this->request->getGet('opcao') == 1) {
-            $dados = $this->UsuarioModel->like('IdUsuario', $pesquisa)->findAll();
+            $dados = $this->UserModel->like('id', $pesquisa)->findAll();
         } else {
-            $dados = $this->UsuarioModel->like('Nome', $pesquisa)->findAll();
+            $dados = $this->UserModel->like('username', $pesquisa)->findAll();
         }
 
         $titulos['title'] = 'TABELA DE CLIENTES';
@@ -222,7 +141,6 @@ class Usuario extends BaseController
 
         $user->delete($id, true);
         return redirect()->route('tableclientes');
-
     }
 
     //TABELA
@@ -287,10 +205,6 @@ class Usuario extends BaseController
             return redirect()->to('cadastro');
         }
     }
-
-
-
-
 
 
     public function pagamento()

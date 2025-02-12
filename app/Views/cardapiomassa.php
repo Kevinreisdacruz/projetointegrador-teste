@@ -1,5 +1,7 @@
+
+
 <div class='card-container' data-aos='fade-right'>
-  <?php foreach ($produtos as $produto) : ?>
+  <?php  foreach ($produtos as $produto) : ?>
     <div class='card-produtos'>
       <img src="<?= base_url('assets/uploads/' . $produto['Imagem']) ?>" alt='' style="width: auto; height: auto;">
       <div class='card-content-produtos'>
@@ -8,18 +10,9 @@
           <?= $produto['Descricao'] ?>
           <br><br><span style="font-weight: bold;">R$:<?= $produto['Preco'] ?></span><br>
         </p>
-        <?= form_open('produtos/adicionarAoCarrinho', 'method=post') ?>
-        <input type="hidden" name="idProduto" value="<?= $produto['IdProdutos'] ?>">
-        <input type="hidden" name="nome_addcarrinho" value="<?= $produto['Nome'] ?>">
-        <input type="hidden" name="descricao_addcarrinho" value="<?= $produto['Descricao'] ?>">
-        <input type="hidden" name="imagem_addcarrinho" value="<?= $produto['Imagem'] ?>">
-        <input type="hidden" name="preco_addcarrinho" value="<?= $produto['Preco'] ?>">
-        <button type='submit' class='btn-card-pginicial shadow'>COMPRAR</a>
-          <?= form_close(); ?>
+        <a href="<?= site_url("produtos/AtualizarCarrinho/" . $produto['IdProdutos']) ?>">COMPRAR</a>
       </div>
-    </div>
-
-
+    </div> 
   <?php endforeach ?>
 
 </div>

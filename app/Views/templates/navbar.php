@@ -9,44 +9,11 @@
   <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
   <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet'
     integrity='sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH' crossorigin='anonymous'>
-  <link rel="stylesheet" href="<?= base_url('assets/css/global.css') ?>">
+  <link rel="stylesheet" href="<?= site_url('assets/css/global.css') ?>">
 
 </head>
 
 <body>
-
-  <!-- aqui a baixo e o html do popup de exclusao de conta -->
-
-  <div id="container-excluir">
-    <div class="fundo-excluir" id="funcoexclusao">
-
-      <div class="titulo-excluir">
-        <h2 style="font-weight: bold;">EXCLUIR CONTA</h2>
-      </div>
-
-      <div class="inf-exclusao">
-        <input type="text" required='required' placeholder="CONFIRME SEU EMAIL">
-        <input type="text" required='required' placeholder="CONFIRME SUA SENHA">
-        <input type="text" id="fone" required='required' placeholder="CONFIRME SEU TELEFONE">
-      </div>
-
-      <div class="botoes-excluir">
-        <a href="<?= base_url('/'); ?>">
-          <button class="btn-excluir">EXCLUIR</button><br>
-        </a>
-        <a href="<?= base_url('/'); ?>">
-          <button class="btn-esquecer-exclusao">CANCELAR A EXCLUSÃO</button>
-        </a>
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <!-- html da exclusao de cadastro termina aqui -->
-
-
   <!-- html de alteracao de cadastro comeca aqui -->
 
   <div id="container-alterar">
@@ -90,9 +57,9 @@
       <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
         <ul class="navbar-nav mb-2 mb-lg-0 me-auto box-link">
           <li class="nav-item">
-            <a href="<?=base_url('login'); ?>" id="login" class="nav-link active link-navbar " aria-current="page">Entrar</a>
-            <?php if(session()->has('usuario')) : ?>
-           
+            <a href="<?= base_url('login'); ?>" id="login" class="nav-link active link-navbar " aria-current="page">Entrar</a>
+            <?php if (session()->has('usuario')) : ?>
+
             <?php endif ?>
           </li>
           <li class="nav-item">
@@ -101,29 +68,23 @@
         </ul>
 
 
-        <?php if(auth()->loggedIn()) : ?>
-              ola, <?php echo auth()->user()->username; ?>
-              <a href="<?=site_url('logout') ?>">sair</a>
-              <?php else : ?>
-              <?php endif; ?>
-        <div class="dropdown">
-          <a href="<?= base_url('administracao'); ?>">
-            <img src="assets/imagelogos/user-icon.png" alt="" style="width: 33px; margin-right: 1rem;">
-          </a>
-          <button class="btn btn-secondary dropdown-toggle border-0 shadow-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #A8D2A0; border: solid 0px;margin-right: 1rem;">
-            PERFIL
-          </button>
-          <ul class="dropdown-menu">
-            <li><button id="alteracao" class="dropdown-item" type="button">INFORMAÇÕES E ALTERAÇÕES</button></li>
-            <li><button id="exclusao" class="dropdown-item" type="button">EXCLUIR CONTA</button></li>
-            <li><a href="<?=url_to('usuario.sair') ?>"><button class="dropdown-item" type="button">DESCONECTAR</button></a></li>
-          </ul>
-        </div>
+        <?php if (auth()->loggedIn()) : ?>
+          ola, <?php echo auth()->user()->username; ?>
+          <a class="logout" href="<?= site_url('logout') ?>">sair</a>
+        <?php else : ?>
+        <?php endif; ?>
+        
+        <a href="<?= base_url('administracao'); ?>">
+          <img src="assets/imagelogos/user-icon.png" alt="" style="width: 33px; margin-right: 1rem;">
+   
+        </a>
 
-        <form class="d-flex my-3" role="search">
-          <input class="form-control me-2" type="search" placeholder="o que você procura ?" aria-label="Search">
-          <button class="btn btn-outline-success pesquisar border-0 shadow-sm" type="submit">Procurar</button>
-        </form>
-      </div>
+       
+
+      <form class="d-flex my-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="o que você procura ?" aria-label="Search">
+        <button class="btn btn-outline-success pesquisar border-0 shadow-sm" type="submit">Procurar</button>
+      </form>
+    </div>
     </div>
   </nav>

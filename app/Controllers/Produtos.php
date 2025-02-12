@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 use App\Models\CarrinhoModel;
 use App\Models\CatalogoModel;
 use App\Models\ProdutoModel;
+use App\Models\UsuarioModel;
 use CodeIgniter\HTTP\ResponseInterface;
 
 class Produtos extends BaseController
@@ -254,6 +255,8 @@ class Produtos extends BaseController
             view('templates/footer');
     }
 
+    
+
     public function excluirProduto($IdProdutos)
     {
         if ($this->produtomodel->delete($IdProdutos)) {
@@ -407,11 +410,12 @@ class Produtos extends BaseController
     //CARDAPIO
     public function cardapiomassa()
     {
-        $produtos = new ProdutoModel();
 
+        
+       
         $titulos['title'] = 'CARDÁPIO MASSAS';
         return view('templates/navbar', $titulos) .
-            view('cardapiomassa', ['produtos' => $produtos->where('menu_id', '2')->findAll()]) .
+            view('cardapiomassa', ['produtos' => $this->produtomodel->where('menu_id', '2')->findAll()]) .
             view('templates/footer');
     }
 
@@ -438,36 +442,27 @@ class Produtos extends BaseController
 
     //CARDAPIO
 
-    public function carrinho()
+    public function atualizarCarrinho($id)
     {
-        $produtos = new CarrinhoModel();
-        
-        $titulos['title'] = 'CARRINHO';
-        return view('templates/navbar', $titulos) .
-            view('carrinho', ['produtos' => $produtos->findAll()]) .
-            view('templates/footer');
-    }
 
-    public function adicionarAoCarrinho()
-    {
-        $dados = [
-            'Nome' => $this->request->getPost('nome_addcarrinho'),
-            'Descricao' => $this->request->getPost('descricao_addcarrinho'),
-            'Imagem' => $this->request->getFile('imagem_addcarrinho'),
-            'Preco' => $this->request->getPost('preco_addcarrinho'),
-        ];
+        if(session()->get('carrinho'))
+        {
+            $carrinho = session()->get('carrinho');
         
-        $produto = new ProdutoModel();
-        $inserindo = $produto->insert($dados);
-
-        if ($inserindo) {
-            return redirect()->to('carrinho');
-        } else {
-            return redirect()->to('cardapiomassa');
+            if(key_exists($id,$carrinho['item']))
+            {
+                $dados = $carrinho['item'][$id];
+            }else{
+                $dados = $this->produtomodel->find($id);
+            }
+            
+            $titulos['title'] = 'QUANTIDADE';
+            return view('templates/navbar', $titulos) .
+                view('atualizarcarrinho',['produtos' => $dados]) .
+                view('templates/footer');
+        
         }
-        
-        $idProduto = $this->request->getGet('idProduto');
-        return $idProduto;
+
     }
 
 }

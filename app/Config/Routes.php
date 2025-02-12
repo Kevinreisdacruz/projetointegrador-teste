@@ -10,18 +10,8 @@ $routes->get('/', 'Main::index',['as' => 'home']);
 
 $routes->get('administracao' , 'Usuario::administracao');
 
-
-
 $routes->get('pagamento', 'usuario::pagamento');
 $routes->get('agradecimento', 'usuario::agradecimento');
-
-
-//CADASTRO USUARIO
-// $routes->get('cadastro', 'usuario::cadastro');
-// $routes->get('/Usuario/cadastro', 'usuario::cadastro', ['as' => 'usuario.cadastro']);
-// $routes->post('/Usuario/validacao', 'usuario::validacao', ['as' => 'usuario.validacao']);
-//CADASTRO USUARIO
-
 
 //TABLE USUARIO
 
@@ -31,17 +21,13 @@ $routes->get('usuarios/excluirusuarios/(:num)', 'Usuario::excluirUsuarios/$1');
 $routes->get('usuario', 'Usuario::buscarCliente');
 //TABLE USUARIO
 
-
-
 $routes->post('/addproduto/validacao', 'Produtos::validacaoProdutos', ['as' => 'addproduto.validacao']);
-
 
 //LOGIN
 
 // $routes->post('/login', 'Usuario::entrar', ['as' => 'usuario.entrar']);
 $routes->get('/login/sair', 'Usuario::sair', ['as' => 'usuario.sair']);
 //LOGIN
-
 
 //CATALOGO
 $routes->get('tablecatalogos', 'Produtos::tablecatalogos');
@@ -61,8 +47,11 @@ $routes->get('produtos/editarproduto/(:num)', 'produtos::editarproduto/$1');
 $routes->post('produtos/alterarproduto', 'Produtos::alterarproduto');
 $routes->get('produtos/excluirProduto/(:num)', 'Produtos::excluirProduto/$1');
 
-$routes->post('produtos/adicionarAoCarrinho', 'Produtos::adicionarAoCarrinho');
-$routes->get('carrinho', 'Produtos::carrinho');
+
+$routes->get('produtos/AtualizarCarrinho/(:num)', 'Produtos::atualizarCarrinho/$1');
+$routes->get('carrinho', 'Carrinho::carrinho'); 
+$routes->get('carrinho/adicionaProduto/(:num)/(:num)', 'Carrinho::adicionaProduto/$1/$2');
+$routes->get('carrinho/removeProduto/(:num)', 'Carrinho::removeProduto/$1');
 
 
 $routes->get('produto/buscarProduto', 'Produto::buscarProduto');
@@ -75,12 +64,10 @@ $routes->get('cardapiomilkshake', 'produtos::cardapiomilkshake');
 $routes->get('cardapiopicoles', 'produtos::cardapiopicole');
 //PRODUTOS
 
-
 //CEP
 $routes->get('cadcep', 'usuario::cep');
 $routes->post('cadcep/validacaoCep/', 'Usuario::validacaoCep',['as' =>'cadcep.validacaoCep']);
 //CEP
-
 
 //PAGAMENTO CARTAO
 

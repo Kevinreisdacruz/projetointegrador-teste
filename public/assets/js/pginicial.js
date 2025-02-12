@@ -1,16 +1,5 @@
 AOS.init()
 
-let caixaexcluir = document.getElementById('container-excluir');
-let exclusao = document.getElementById('exclusao');
-exclusao.addEventListener("click", excluir)
-
-
-function excluir() {
-  caixaexcluir.style.display = "flex";
-
-
-};
-
 let caixaalterar = document.getElementById('container-alterar');
 let alteracao = document.getElementById('alteracao');
 alteracao.addEventListener("click", alterar)
