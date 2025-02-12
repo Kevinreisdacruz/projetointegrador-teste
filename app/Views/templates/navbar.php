@@ -76,15 +76,13 @@
         
         <a href="<?= base_url('administracao'); ?>">
           <img src="assets/imagelogos/user-icon.png" alt="" style="width: 33px; margin-right: 1rem;">
-   
         </a>
-
        
 
-      <form class="d-flex my-3" role="search">
-        <input class="form-control me-2" type="search" placeholder="o que você procura ?" aria-label="Search">
+      <?= form_open('produto/buscarmenu', 'method="get') ?>
+        <input name="pesquisar-catalogo" id="input-index"  class="form-control me-2" type="search" placeholder="o que você procura ?" aria-label="Search">
         <button class="btn btn-outline-success pesquisar border-0 shadow-sm" type="submit">Procurar</button>
-      </form>
+      <?=form_close() ?>
     </div>
     </div>
   </nav>

@@ -9,6 +9,7 @@
     }
     ?>
 
+  <?php if($produtos) : ?>
     <?php foreach ($produtos['item'] as $produto) : ?>
       <div class="produtos-carrinho">
         <div style="padding: 2.5rem;" class="image-produto">
@@ -16,18 +17,18 @@
           <img src="<?= site_url('assets/uploads/' . $produto['Imagem']) ?>" alt="">
           <a href="<?= base_url('produtos/AtualizarCarrinho/') . $produto['IdProdutos']  ?>">ATUAIZAR</a>
           <button  id="<?= $produto['id'] ?>" name="oi" class="btn btn-danger m-2">Remover </button>
-          <h6 style="font-weight: bold; padding-left: 1rem;"><?= $produto['Nome'] ?></h6>
+          <h6 style="font-weight: bold; ;"><?= $produto['Nome'] ?></h6>
           <p>Quantidade: <?= $produto['qtd'] ?></p>
         </div><br>
         <div class="add-dimin">
         </div>
       </div>
+      <?php $total += $produto['total']; ?>
     <?php endforeach ?>
-    <?php
-    $total += $produto['total'];
-    ?>
-
-
+    
+   
+    <?php endif ?>
+  
 
     <hr style="width: 100%;">
     <div class="resumo">
@@ -52,6 +53,24 @@
 </div>
 
 <script>
+
+const botoes = document.querySelectorAll('button');
+
+botoes.forEach(botao => {
+    botao.addEventListener('click', function (event) {
+        const clicado = event.target;
+        if(clicado.name == "editar"){
+
+            window.location.href=`<?= site_url("produto/produtoDetalhe/") ?>${clicado.id}`;
+        } else {
+            removerdoCarrinho(clicado.id);
+        }
+
+    });
+});
+
+
+
   function removerdoCarrinho(id) {
     window.location.href = `<?= site_url("carrinho/removeProduto/") ?>${id}`;
   }

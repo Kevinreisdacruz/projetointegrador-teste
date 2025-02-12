@@ -255,7 +255,21 @@ class Produtos extends BaseController
             view('templates/footer');
     }
 
-    
+    public function buscarMenu()
+    {
+        $pesquisa = $this->request->getGet('pesquisar-catalogo');
+
+        if ($pesquisa == NULL) {
+            $catalogos = $this->catalogomodel->findAll();
+        } else {
+            $catalogos = $this->catalogomodel->like('Nome', $pesquisa)->findAll();
+        }
+        
+        $titulos['title'] = 'PAGINA INICIAL';
+        return view('templates/navbar', $titulos) .
+            view('pesquisa', ['catalogos' => $catalogos]) .
+            view('templates/footer');
+    }
 
     public function excluirProduto($IdProdutos)
     {
@@ -411,8 +425,8 @@ class Produtos extends BaseController
     public function cardapiomassa()
     {
 
-        
-       
+
+
         $titulos['title'] = 'CARDÁPIO MASSAS';
         return view('templates/navbar', $titulos) .
             view('cardapiomassa', ['produtos' => $this->produtomodel->where('menu_id', '2')->findAll()]) .
@@ -445,24 +459,19 @@ class Produtos extends BaseController
     public function atualizarCarrinho($id)
     {
 
-        if(session()->get('carrinho'))
-        {
+        if (session()->get('carrinho')) {
             $carrinho = session()->get('carrinho');
-        
-            if(key_exists($id,$carrinho['item']))
-            {
+
+            if (key_exists($id, $carrinho['item'])) {
                 $dados = $carrinho['item'][$id];
-            }else{
+            } else {
                 $dados = $this->produtomodel->find($id);
             }
-            
+
             $titulos['title'] = 'QUANTIDADE';
             return view('templates/navbar', $titulos) .
-                view('atualizarcarrinho',['produtos' => $dados]) .
+                view('atualizarcarrinho', ['produtos' => $dados]) .
                 view('templates/footer');
-        
         }
-
     }
-
 }

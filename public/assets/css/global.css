@@ -43,7 +43,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1;
-    width: 100%;
+
 
     .logout
     {
@@ -98,6 +98,7 @@ body {
 
 
 .pesquisar {
+    display: flex;
     background-color: #A8D2A0;
     color: white;
     transition: all ease-in-out 1.1s;
@@ -106,6 +107,8 @@ body {
 .pesquisar:hover {
     scale: 1.1;
 }
+
+
 
 @media only screen and (max-width: 610px) and (min-width:344px) {
 
@@ -530,7 +533,7 @@ div i {
 .card-content-produtos {
     padding: 2rem;
 
-    .btn-card-pginicial {
+    a {
         padding: 8px 16px;
         background-color: #325037;
         color: white;
@@ -560,12 +563,13 @@ div i {
     margin-bottom: 2rem;
 
     .produtos-carrinho {
-        display: flex;
+    display: flex;
        
         .image-produto {
             align-items: center;
             display: flex;
             flex-direction: row;
+            
 
             a{
                 text-decoration: none;
@@ -583,6 +587,7 @@ div i {
             img {
                 width: 10rem;
                 border-radius: 1rem;
+                
             }
 
 

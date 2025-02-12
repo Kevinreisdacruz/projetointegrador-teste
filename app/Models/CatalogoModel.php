@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class CatalogoModel extends Model
 {
-    protected $table            = 'catalogos';
+    protected $table            = 'Catalogos';
     protected $primaryKey       = 'IdCatalogos';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';

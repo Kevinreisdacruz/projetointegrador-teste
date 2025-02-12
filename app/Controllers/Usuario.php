@@ -81,7 +81,7 @@ class Usuario extends BaseController
     {
         $users = auth()->getProvider();
         $user = $users->find($id);
-        $user->addGroup('administrador');
+        $user->addGroup('admin');
 
         return redirect()->route('tableclientes');
     }
@@ -90,7 +90,7 @@ class Usuario extends BaseController
     {
         $users = auth()->getProvider();
         $user = $users->find($id);
-        $user->removeGroup('administrador');
+        $user->removeGroup('admin');
 
         return redirect()->route('tableclientes');
     }

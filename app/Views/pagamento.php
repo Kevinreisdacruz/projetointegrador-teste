@@ -12,10 +12,9 @@
                     <img class="pagamento" src="assets/imagelogos/cartoes.png" alt="">
                 </a>
             </div>
-            <a href="">
-                <img class="pagamento" src="assets/imagelogos/pix.png  " alt="">
-            </a>
+            <a href="<?=base_url('agradecimento') ?>">
             <img class="pagamento" src="assets/imagelogos/money-icon-911ee8.webp" alt="" >
+            </a>
         </div>
     </div>
 </div>

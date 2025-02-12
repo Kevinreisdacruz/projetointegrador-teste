@@ -15,9 +15,9 @@ $routes->get('agradecimento', 'usuario::agradecimento');
 
 //TABLE USUARIO
 
-$routes->get('usuario/editarUsuario/(:num)', 'Usuario::editarUsuario/$1');
-$routes->post('usuario/alterarCliente', 'Usuario::alterarCliente');
-$routes->get('usuarios/excluirusuarios/(:num)', 'Usuario::excluirUsuarios/$1');
+$routes->get('usuario/editarUsuario/(:num)', 'Usuario::editarUsuario/$1',['filter' => 'group:admin']);
+$routes->post('usuario/alterarCliente', 'Usuario::alterarCliente',['filter' => 'group:admin']);
+$routes->get('usuarios/excluirusuarios/(:num)', 'Usuario::excluirUsuarios/$1',['filter' => 'group:admin']);
 $routes->get('usuario', 'Usuario::buscarCliente');
 //TABLE USUARIO
 
@@ -30,6 +30,9 @@ $routes->get('/login/sair', 'Usuario::sair', ['as' => 'usuario.sair']);
 //LOGIN
 
 //CATALOGO
+
+$routes->get('produto/buscarmenu', 'Produtos::buscarMenu');
+
 $routes->get('tablecatalogos', 'Produtos::tablecatalogos');
 $routes->post('/addcatalogo/validacao', 'Produtos::validacaoCatalogo', ['as' => 'addcatalogo.validacao']);
 
@@ -79,10 +82,10 @@ $routes->post('pagamento/validacaoCartao/', 'Usuario::validacaoCartao',['as' =>'
 
 $routes->get('tableclientes', 'Usuario::usuarios', );
 
-$routes->get('usuarios/defineAdmin/(:num)', 'Usuario::defineAdmin/$1');
+$routes->get('usuarios/defineAdmin/(:num)', 'Usuario::defineAdmin/$1',);
 
-$routes->get('usuarios/removeAdmin/(:num)', 'Usuario::removeAdmin/$1');
+$routes->get('usuarios/removeAdmin/(:num)', 'Usuario::removeAdmin/$1',);
 
 service('auth')->routes($routes);
 
-// ['filter' => 'group:administrador']
+// 
