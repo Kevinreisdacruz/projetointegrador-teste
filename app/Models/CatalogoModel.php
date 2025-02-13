@@ -15,7 +15,8 @@ class CatalogoModel extends Model
     protected $allowedFields    = [
         'Nome',
         'Imagem',
-        'Descricao'
+        'Descricao',
+        'menu_id',
     ];
 
     protected bool $allowEmptyInserts = false;

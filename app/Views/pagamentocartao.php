@@ -1,4 +1,4 @@
-<?php echo form_open_multipart('pagamento/validacaoCartao');?>
+
 <div class='box2'>
     <div class='fundo-cartao'>
         <div class='imagem-cartao'>
@@ -6,30 +6,27 @@
         </div>
 
         <div class='inf'>
-            <input name="nometitular" id='titular' type='text' >
+            <input name="nometitular" id='titular' type='text'>
             <span>NOME DO TITULAR</span>
-            <span style="color: red;"><?php echo session()->getFlashdata('error')['nometitular'] ?? '' ?></span>
         </div>
         <div class='inf'>
-            <input name="numerocartao" id='num-card' type='text' >
+            <input name="numerocartao" id='num-card' type='text'>
             <span>NÚMERO DO CARTÃO</span>
-            <span style="color: red;"><?php echo session()->getFlashdata('error')['numerocartao'] ?? '' ?></span>
         </div>
         <div class='inf'>
-            <input name="validade" id='data' type='text' >
+            <input name="validade" id='data' type='text'>
             <span>DATA DE VALIDADE</span>
-            <span style="color: red;"><?php echo session()->getFlashdata('error')['validade'] ?? '' ?></span>
         </div>
         <div class='inf'>
-            <input name="codseguranca" id='cod-seguranca' type='text' >
+            <input name="codseguranca" id='cod-seguranca' type='text'>
             <span>CVC</span>
-            <span style="color: red;"><?php echo session()->getFlashdata('error')['codseguranca'] ?? '' ?></span>
         </div>
 
         <div class='botao-confirmar'>
-                <button type="submit" class='botao'>CONFIRMAR COMPRA</button>
+            <a href="<?=base_url('agradecimento') ?>">
+                <button  class='botao'>CONFIRMAR COMPRA</button>
+            </a>
         </div>
 
     </div>
 </div>
-<?php form_close(); ?> 

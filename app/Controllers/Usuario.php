@@ -226,29 +226,7 @@ class Usuario extends BaseController
 
     public function validacaoCartao()
     {
-        if (! $this->validate([
-            'nometitular' => 'required',
-            'numerocartao' => 'required',
-            'validade' => 'required',
-            'codseguranca' => 'required',
-        ], [
-            'nometitular' => [
-                'required' => 'O nome do titular é obrigatorio',
-            ],
-
-            'numerocartao' => [
-                'required' => 'O número do cartão é obrigatorio',
-            ],
-            'validade' => [
-                'required' => 'A data de vencimento do cartão é obrigatorio',
-            ],
-            'codseguranca' => [
-                'required' => 'O codigo de validaco é obrigatorio',
-            ],
-        ])) {
-
-            return redirect()->route('pagamentocartao')->withInput()->with('error', $this->validator->getErrors());
-        }
+       
     }
 
     public function agradecimento()

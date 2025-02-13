@@ -15,9 +15,9 @@ $routes->get('agradecimento', 'usuario::agradecimento');
 
 //TABLE USUARIO
 
-$routes->get('usuario/editarUsuario/(:num)', 'Usuario::editarUsuario/$1',['filter' => 'group:admin']);
-$routes->post('usuario/alterarCliente', 'Usuario::alterarCliente',['filter' => 'group:admin']);
-$routes->get('usuarios/excluirusuarios/(:num)', 'Usuario::excluirUsuarios/$1',['filter' => 'group:admin']);
+$routes->get('usuario/editarUsuario/(:num)', 'Usuario::editarUsuario/$1');
+$routes->post('usuario/alterarCliente', 'Usuario::alterarCliente');
+$routes->get('usuarios/excluirusuarios/(:num)', 'Usuario::excluirUsuarios/$1');
 $routes->get('usuario', 'Usuario::buscarCliente');
 //TABLE USUARIO
 
@@ -75,10 +75,9 @@ $routes->post('cadcep/validacaoCep/', 'Usuario::validacaoCep',['as' =>'cadcep.va
 //PAGAMENTO CARTAO
 
 $routes->get('pagamentocartao', 'usuario::pagamentocartao');
-$routes->post('pagamento/validacaoCartao/', 'Usuario::validacaoCartao',['as' =>'pagamento.validacaoCartao']);
+
 
 //PAGAMENTO CARTAO
-
 
 $routes->get('tableclientes', 'Usuario::usuarios', );
 
@@ -88,4 +87,4 @@ $routes->get('usuarios/removeAdmin/(:num)', 'Usuario::removeAdmin/$1',);
 
 service('auth')->routes($routes);
 
-// 
+// ['filter' => 'group:admin']

@@ -505,7 +505,9 @@ div i {
 }
 
 .fundosobrenos {
-    background-image: url(../imagefundos/sobrenos.png);
+    width: 40rem;
+    height: 40rem;
+    background-color: white;
     opacity: 90%;
     padding: 1rem;
     height: 32rem;
